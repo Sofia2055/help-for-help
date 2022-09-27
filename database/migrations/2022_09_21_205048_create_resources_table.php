@@ -20,8 +20,6 @@ return new class extends Migration
             $table->string('state');
             $table->integer('resources_quantity');
             $table->integer('given_quantity');
-            $table->string('email');
-            $table->string('phone');
             $table->foreignId('center_id');
             $table->boolean('received');
             $table->timestamps();
