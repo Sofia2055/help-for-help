@@ -14,9 +14,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    //return view('welcome');
+    return view('welcome');
     //return \App\Models\User::All();
     return view('users',[
         'users' => \App\Models\User::All()
     ]);
+});
+
+Route::get('/resource/{resource}', function (\App\Models\Resource $resource) {
+    return $resource;
+});
+
+Route::post('/create/resource', function() {
+    $checkData = request()->validate([
+        'product_name' => 'required|max:255',
+        'description' => 'required|max:750',
+        'state' => 'required|max:10',
+        'resources_quantity'=> 'required|number',
+        'center_id' => 'required|number',
+    ]);
+
+    $checkData['given_quantity'] = 0;
+    $checkData['received'] = false;
+
+    \App\Models\Resource::create($checkData);
 });

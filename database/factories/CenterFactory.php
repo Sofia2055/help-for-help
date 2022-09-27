@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Resources>
  */
-class resourcesFactory extends Factory
+class centerFactory extends Factory
 {
   /**
      * Define the model's default state.
@@ -18,7 +18,7 @@ class resourcesFactory extends Factory
     public function definition()
     {
         return [
-            'name' => "Centro Superate " + fake()->name(), 
+            'name' => "Centro Superate ".fake()->name(), 
         ];
     }
 
