@@ -19,6 +19,7 @@ class centerFactory extends Factory
     {
         return [
             'name' => "Centro Superate ".fake()->name(), 
+            'description' => fake()->paragraph(), 
         ];
     }
 

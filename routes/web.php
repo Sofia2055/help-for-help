@@ -15,14 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-    //return \App\Models\User::All();
-    return view('users',[
-        'users' => \App\Models\User::All()
-    ]);
+});
+
+Route::get('/centers', function (){
+    return \App\Models\Center::All();
 });
 
 Route::get('/resource/{resource}', function (\App\Models\Resource $resource) {
     return $resource;
+});
+
+Route::get('form/resource', function() {
+    return view('form');
 });
 
 Route::post('/create/resource', function() {
@@ -30,12 +34,15 @@ Route::post('/create/resource', function() {
         'product_name' => 'required|max:255',
         'description' => 'required|max:750',
         'state' => 'required|max:10',
-        'resources_quantity'=> 'required|number',
-        'center_id' => 'required|number',
+        'resources_quantity'=> 'required|numeric',
+        'center_id' => 'required|numeric',
     ]);
+
 
     $checkData['given_quantity'] = 0;
     $checkData['received'] = false;
 
     \App\Models\Resource::create($checkData);
+
+    return "datos correctos";
 });
