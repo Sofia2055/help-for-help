@@ -26,7 +26,9 @@ Route::get('/centers', function (){
 });
 
 Route::get('/resources', function () {
-    return \App\Models\Resource::Where('received', '=', '1')->WhereRaw('given_quantity < resources_quantity')->get();
+    return view('resources', [
+        'resources' => \App\Models\Resource::Where('received', '=', '1')->WhereRaw('given_quantity < resources_quantity')->get(),
+    ]);
 });
 
 Route::get('/resource/{resource}', function (\App\Models\Resource $resource) {
