@@ -62,7 +62,7 @@
 
               </div>
                 <a href="" class="nav-menu-link nav-link Tutorial"><b>Tutorial</b></a></li>
-                <a href="FORM.HTML" class="nav-menu-link nav-link tres"><b>Giving back</b></a></li>
+                <a href="" class="nav-menu-link nav-link tres"><b>Giving back</b></a></li>
                 <a href="{{ url('resources') }}" class="nav-menu-link nav-link dos"><b>Resources</b></a></li>
 
                 <a href="" class="nav-menu-link nav-link uno"><b>Home</b></a></li>
