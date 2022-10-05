@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Signika Negative', sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+.header{
+    position: fixed;
+    
+}
+
+.d-block{
+height: 630px;
+}
+
+.navegacion{
+    background-color: #41c1ba;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    text-align: right;
+}
+
+.nav-menu{
+    padding-top: 20px;
+    padding-left: 560px;
+    background-color: #41c1ba;
+    display: flex;
+    text-align: right;
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: right;
+}
+
+.h1-celular{
+    display: none;
+}
+
+.nav{
+    padding-right: 100px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+    text-align: right;
+}
+
+.nav-menu-item{
+    font-size: 15px;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: max-content;
+    text-align: right;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+}
+
+.help{
+    font-size: 22px;
+    padding-top: 22px;
+    text-align: center;
+}
+
+.acceder{
+    color: #07396b;
+    text-align: right;
+}
+
+.user{
+color: #07396b;
+padding-top: 20px;
+font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 80px;
+    padding-top:175px ;
+}
+
+.primera{
+    padding-bottom: 1000px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+.quienes{
+padding-top: 20px;
+text-align: center;
+padding-right: 700px;
+color:#07396b;
+
+
+}
+
+p{
+    padding-top: 15px;
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 700px;
+    
+}
+.primer-p{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.red{
+    position: fixed;
+    top: 200px;
+    z-index: 100;
+    left: 0;
+}
+
+
+
+.tarjeta{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+width:420px;
+border: 1px solid lightgray;
+box-shadow: 2px 2px 8px 4px #d3d3d3d1; 
+border-radius:15px;
+font-family: sans-serif;
+}
+.titulo{
+font-size: 24px;
+padding: 10px 10px 0 10px;;
+}
+.cuerpo{
+padding: 10px;
+}
+.pie{
+background: #6699ff;
+border-radius:0 0 15px 15px;
+padding: 10px;
+text-align:center;
+}
+.pie a{
+text-decoration: none;
+color: white;
+}
+.pie a:after {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1;
+content: ""
+}
+
+
+
