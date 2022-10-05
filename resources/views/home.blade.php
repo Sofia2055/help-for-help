@@ -18,7 +18,7 @@
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="9" class="active"></li>     
+          <li data-target="#carouselExampleIndicators" data-slide-to="9" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
@@ -41,9 +41,9 @@
           <span class="sr-only">Next</span>
         </a>
 
-      
+
       </div>
-      
+
     <header class="OLA">
       <div class="fixed-bottom">...
         <nav class="nav">
@@ -51,7 +51,7 @@
             <img src="img/logo-k.png" alt="">
             <h1 class="help"><h>Help for help</h></h1>
             <ul class="nav-menu nav-menu_visible">
-              
+
               <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle"
                         data-toggle="dropdown">
@@ -59,16 +59,16 @@
                 </button>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="02.html">login Admin</a></li>
-                  
+
               </div>
                 <a href="" class="nav-menu-link nav-link Tutorial"><b>Tutorial</b></a></li>
                 <a href="FORM.HTML" class="nav-menu-link nav-link tres"><b>Giving back</b></a></li>
-                <a href="" class="nav-menu-link nav-link dos"><b>Resources</b></a></li>
+                <a href="{{ url('resources') }}" class="nav-menu-link nav-link dos"><b>Resources</b></a></li>
 
                 <a href="" class="nav-menu-link nav-link uno"><b>Home</b></a></li>
                 <div class="user">
                </div>
-            </ul> 
+            </ul>
         </div>
         </nav>
     </header>
@@ -76,24 +76,24 @@
     <div class="tarjeta">
       <div class="titulo">Get to know our "Help For Help" project</div>
       <div class="cuerpo">
-      
 
-      This project will help meet the needs that need to arise in the families of Superate students, 
-      and provide them with a way to apply for help. We will support the strength 
+
+      This project will help meet the needs that need to arise in the families of Superate students,
+      and provide them with a way to apply for help. We will support the strength
       of more people on the outside, who have the opportunity to give, and who also want to lend a hand.
       </div>
-      
+
       </div>
     </div>
-  
-    
+
+
 
 
 </section>
 
 
-    
-    
+
+
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -102,11 +102,11 @@
           <span>Our information</span>
         </div>
         <!-- Left -->
-    
+
         <!-- Right -->
 
         <div>
-          
+
           <button>
             <a href="https://es-la.facebook.com/superate.poma.5/" class="me-4 text-reset">
               <i class="fab fa-facebook-f"></i>
@@ -124,7 +124,7 @@
         <!-- Right -->
       </section>
       <!-- Section: Social media -->
-    
+
       <!-- Section: Links  -->
       <section class="footer">
         <div class="container text-center text-md-start mt-5">
@@ -137,11 +137,11 @@
                 <i class="fas fa-gem me-3"></i>Help for Help
               </h6>
               <p>
-                
+
               </p>
             </div>
             <!-- Grid column -->
-    
+
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
@@ -152,13 +152,13 @@
                 <a href="#!" class="text-reset">RESOURCES</a>
               </p>
               <p>
-          
+
               <p>
                 <a href="FORM.HTML" class="text-reset">GIVING BACK</a>
               </p>
             </div>
             <!-- Grid column -->
-    
+
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
@@ -173,10 +173,10 @@
               <p>
                 <a href="#!" class="text-reset">Tutorial</a>
               </p>
-             
+
             </div>
             <!-- Grid column -->
-    
+
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
@@ -187,7 +187,7 @@
                 info@poma.superate.org.sv
               </p>
               <p><i class="fas fa-phone me-3"></i>+503 2229-7239</p>
-             
+
             </div>
             <!-- Grid column -->
           </div>
@@ -195,11 +195,11 @@
         </div>
       </section>
       <!-- Section: Links  -->
-    
+
       <!-- Copyright -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2022 Help for Help:
-      
+
       </div>
       <!-- Copyright -->
     </footer>
