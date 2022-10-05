@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/login', function () {
+    return view('login');
+});
+
 Route::get('/centers', function (){
     return \App\Models\Center::All();
 });
@@ -29,7 +33,7 @@ Route::get('/resource/{resource}', function (\App\Models\Resource $resource) {
     return $resource;
 });
 
-Route::get('/form/resource', function() {
+Route::get('/form', function() {
     return view('form');
 });
 
