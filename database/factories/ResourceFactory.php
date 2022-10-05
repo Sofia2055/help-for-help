@@ -22,6 +22,7 @@ class resourceFactory extends Factory
         return [
             'product_name' => fake()-> word(),
             'description' => fake()->sentence(),
+            'email' => fake()->safeEmail(),
             'state' => fake()->randomElement(["new","as new","use"]),
             'resources_quantity'=> $res_quan,
             'given_quantity' => fake()->numberBetween(0 , $res_quan),
