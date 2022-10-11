@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #41c1ba !important;
+}
+
+.card-link {
+    color: black;
+    text-decoration: none;
+}
+
+.card-link:link {
+    color: black;
+}
+
+.card-link:visited {
+    color: black;
+}
+
+.card-link:hover {
+    color: rgb(99, 99, 99);
+}
+
+.card-link:active {
+    color: blue;
+}
+
+.vertical-center {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+}

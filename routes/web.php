@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,31 +22,52 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/login2', function () {
+    return view('login2');
+});
+
 Route::get('/centers', function (){
     return \App\Models\Center::All();
-});
-
-Route::get('/resources', function () {
-    return view('resources', [
-        'resources' => \App\Models\Resource::Where('received', '=', '1')->WhereRaw('given_quantity < resources_quantity')->get(),
-    ]);
-});
-
-Route::get('/resource/{resource}', function (\App\Models\Resource $resource) {
-    return $resource;
 });
 
 Route::get('/form', function() {
     return view('form');
 });
 
+Route::get('/resources', function () {
+    $resources = \App\Models\Resource::WhereRaw('given_quantity < resources_quantity');
+
+    if(!Auth::check()){
+        $resources->Where('received', '=', '1');
+    }
+
+    return view('resources', [
+        'resources' => $resources->get(),
+    ]);
+});
+
+
+Route::get('/resource/{resource}', function (\App\Models\Resource $resource) {
+    return view('resource', [
+        'resource' => $resource
+    ]);
+});
+
 Route::get('/resource/{resource}/received', function (\App\Models\Resource $resource) {
+    if(!Auth::check()){
+        return back()->with('error', "You must be logged in to make changes");
+    }
+
     $resource->received = true;
     $resource->save();
-    return redirect('/');
+    return back()->with('success', 'The resource has been marked as received successfully');
 });
 
 Route::post('/resource/{resource}/given', function (\App\Models\Resource $resource) {
+    if(!Auth::check()){
+        return back()->with('error', "You must be logged in to make changes");
+    }
+
     $attributes = request()->validate([
         'quantity' => 'required|numeric'
     ]);
@@ -53,21 +75,18 @@ Route::post('/resource/{resource}/given', function (\App\Models\Resource $resour
     $quantity = $attributes['quantity'];
 
     if($resource->received == false){
-        return "No se puede dar un producto que no se tiene";
+        return back()->with('error', "It cannot be given a product that we don't have");
     }
 
     $resource->given_quantity += $quantity;
 
     if($resource->resources_quantity < $resource->given_quantity){
-        return "No puede ser mayor";
+        $resource->refresh();
+        return back()->with('error', "There is not much quantity available, maximun can be $resource->available_quantity");
     }
 
     $resource->save();
-    return redirect('/');
-});
-
-Route::get('/login', function () {
-    return view('login');
+    return back()->with('success', "$quantity $resource->product_name given successfully");
 });
 
 Route::post('/login', function () {
@@ -86,6 +105,12 @@ Route::post('/login', function () {
     return redirect('/')->with('success', 'Logged in succesfully!');
 });
 
+Route::get('/logout', function () {
+    auth()->logout();
+
+    return redirect('/')->with('success', 'Logged out sucessfully!');
+});
+
 Route::post('/create/resource', function() {
     $checkData = request()->validate([
         'product_name' => 'required|max:255',
@@ -94,13 +119,31 @@ Route::post('/create/resource', function() {
         'state' => 'required|max:10',
         'resources_quantity'=> 'required|numeric',
         'center_id' => 'required|numeric',
+        'images' => 'required|image'
     ]);
 
 
     $checkData['given_quantity'] = 0;
     $checkData['received'] = false;
 
-    \App\Models\Resource::create($checkData);
+    $resource = \App\Models\Resource::create($checkData);
 
-    return "datos correctos";
+    /*for ($i=1; $i <= 10; $i++) {
+        if(request()->hasFile("image$i")){
+            request()->file("image$i")->storeAs('resources-img', "$resource->id-$i.jpg", 'public');
+        }
+    }*/
+
+    if(request()->hasFile('images')){
+        $counter = 0;
+        foreach (request()->file('images') as $image) {
+            $image->storeAs('resources-img', "$resource->id-$i.jpg", 'public');
+            $counter++;
+            if($counter >= 6){
+                break;
+            }
+        }
+    }
+
+    return back()->with('success', 'Your resource request has been created successfully, please try to bring the resource as soon as posible to the center you have selected');;
 });

@@ -1,43 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="icon" href="img/logo-k.png">
-    <link rel="stylesheet" href="css/02.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-    <div id="contenedor">
-            
-        <div id="contenedorcentrado">
-            <div id="login">
-                <form id="loginform">
-                    <label for="usuario">Usuario</label>
-                    <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
-                    
-                    <label for="password">Contraseña</label>
-                    <input id="password" type="password" placeholder="Contraseña" name="password" required>
-                    
-                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
-                </form>
-                
-            </div>
-            <div id="derecho">
-                <div class="titulo">
-                    Welcome Administrator
-                </div>
-                <hr>
-                <div class="pie-form">
-                    <a href="#">¿Perdiste tu contraseña?</a>
-                    <a href="#">¿No tienes Cuenta? Registrate</a>
-                    <hr>
-                    <a href="01.html">« Volver</a>
+<x-body>
+    <div class="jumbotron vertical-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card my-3">
+                        <div class="row g-0 my-5">
+                            <div class="col-md-4 order-2 order-md-2">
+                                <div class="col-10 offset-1">
+                                    <form action="{{ url('login') }}" method="POST">
+                                        @csrf
+                                        <x-input type="email" label="Email address" name="email" :required="true"/>
+                                        <x-input type="password" label="Password" name="password" :required="true"/>
+                                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-8 order-1 order-md-2">
+                                <div class="col-10 offset-1">
+                                    <div class="card-body">
+                                        <h1 class="card-title text-center">Help for help<br>Administration</h1>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
-</html>
+</x-body>
