@@ -23,7 +23,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-8 offset-2 offset-md-0 order-1 order-md-2 pe-4 d-flex flex-wrap align-items-center">
+                            <div class="col-md-2 col-8 offset-2 offset-md-0 order-1 order-md-2 pe-md-4 d-flex flex-wrap align-items-center">
                                 <img src="{{ url('img/logo-k.png') }}" width="100%">
                             </div>
                         </div>

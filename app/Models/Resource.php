@@ -17,8 +17,8 @@ class Resource extends Model
         'available_quantity'
     ];
 
-    public function setPasswordAttribute($password){
-        $this->attributes['password'] = bcrypt($password);
+    public function center(){
+        return $this->belongsTo(Center::class);
     }
 
     public function getAvailableQuantityAttribute(){

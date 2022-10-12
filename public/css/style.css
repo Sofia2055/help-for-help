@@ -39,3 +39,9 @@
     background-color: #6bc72a;
     border-color: #6bc72a;
 }
+
+.touchBottom{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
