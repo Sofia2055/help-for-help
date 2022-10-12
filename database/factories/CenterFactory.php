@@ -18,8 +18,9 @@ class centerFactory extends Factory
     public function definition()
     {
         return [
-            'name' => "Centro Superate ".fake()->name(), 
-            'description' => fake()->paragraph(), 
+            'name' => "Centro Superate ".fake()->name(),
+            'description' => fake()->paragraph(),
+            'address' => fake()->paragraph(),
         ];
     }
 
