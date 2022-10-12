@@ -10,7 +10,6 @@
                             <h5 class="card-title">{{ $resource->product_name }}</h5>
                             <p class="card-text">{{ $resource->description }}</p>
                         </a>
-
                     </div>
                     @auth
                         <div class="card-footer">
