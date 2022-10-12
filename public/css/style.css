@@ -29,3 +29,13 @@
     display: flex;
     align-items: center;
 }
+
+.color-aqua{
+    background-color: #41c1ba;
+    border-color: #41c1ba;
+}
+
+.color-aqua:hover{
+    background-color: #6bc72a;
+    border-color: #6bc72a;
+}
