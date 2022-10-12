@@ -28,5 +28,16 @@ class DatabaseSeeder extends Seeder
         \App\Models\Center::factory(7)->create();
 
         \App\Models\Resource::factory(10)->create();
+
+        \App\Models\Resource::factory()->create([
+            'product_name' => "Sacapuntas",
+            'center_id' => 1,
+            'description' => 'Sacapuntas que me sobraron',
+            'resources_quantity' => 7,
+            'given_quantity' => 0,
+            'state' => 'as new',
+            'received' => true
+        ]);
+
     }
 }
