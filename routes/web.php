@@ -34,7 +34,13 @@ Route::get('/centers', function (){
 });
 
 Route::get('/form', function() {
-    return view('form');
+    return view('form', [
+        'centers' => \App\Models\Center::All()
+    ]);
+});
+
+Route::get('/form2', function() {
+    return view('form2');
 });
 
 Route::get('/resources', function () {
@@ -122,7 +128,7 @@ Route::post('/create/resource', function() {
         'state' => 'required|max:10',
         'resources_quantity'=> 'required|numeric',
         'center_id' => 'required|numeric',
-        'images' => 'required|image'
+        'images' => 'required'
     ]);
 
 
@@ -148,5 +154,5 @@ Route::post('/create/resource', function() {
         }
     }
 
-    return back()->with('success', 'Your resource request has been created successfully, please try to bring the resource as soon as posible to the center you have selected');;
+    return redirect('/')->with('success', 'Your resource request has been created successfully, please try to bring the resource as soon as posible to the center you have selected');;
 });
