@@ -38,24 +38,26 @@
                 </div>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-sm- 2row-cols-md-3 row-cols-lg-4 g-4">
-            @foreach ($centers as $center)
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="centers-img/{{ $center->id }}.png">
-                        <div class="card-body">
-                            <h5 class="card-title fs-4">Centro {{ $center->name }}</h5>
-                            <p class="card-text"> {{ $center->description }}</p>
-                        </div>
-                        <div class="col-12 align-self-end">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Address: {{ $center->address }}</li>
-                                <li class="list-group-item">Email: {{ $center->email }}</li>
-                            </ul>
+        <div class="col-10 offset-1">
+            <div class="row row-cols-1 row-cols-sm- 2row-cols-md-3 row-cols-lg-3 g-3">
+                @foreach ($centers as $center)
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="centers-img/{{ $center->id }}.png">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4">Centro {{ $center->name }}</h5>
+                                <p class="card-text"> {{ $center->description }}</p>
+                            </div>
+                            <div class="col-12 align-self-end">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Address: {{ $center->address }}</li>
+                                    <li class="list-group-item">Email: {{ $center->email }}</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
     </div>
 </x-body>

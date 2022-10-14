@@ -1,11 +1,11 @@
 <x-body>
     @section('title', 'Giving back')
     <div class="container">
-        <div class="row">
+        <div class="row my-3">
             <div class="col-12 text-center">
                 <h1>Giving Back Form H4H</h1>
             </div>
-            <div class="col-12">
+            <div class="col-12 offset-0 col-md-8 offset-md-2">
                 <form action="{{ url('/create/resource') }}" method="POST">
                     @csrf
                     <x-input type="text" label="Resource name" name="product_name" :required="true" />

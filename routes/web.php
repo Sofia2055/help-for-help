@@ -131,7 +131,6 @@ Route::post('/create/resource', function() {
         'images' => 'required'
     ]);
 
-
     $checkData['given_quantity'] = 0;
     $checkData['received'] = false;
 
