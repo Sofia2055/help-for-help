@@ -1,4 +1,5 @@
 <x-body>
+@section('title', 'resources')
 <div class="container my-3">
     <div class="row row-cols-1 row-cols-sm- 2row-cols-md-3 row-cols-lg-4 g-4">
         @foreach ($resources as $resource)

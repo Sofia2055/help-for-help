@@ -23,8 +23,8 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/login2', function () {
-    return view('login2');
+Route::get('tutorial', function () {
+    return view('tutorial');
 });
 
 Route::get('/centers', function (){

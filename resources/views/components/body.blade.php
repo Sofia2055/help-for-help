@@ -10,7 +10,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
     <link rel="icon" href="{{ url('img/logo-k.png') }}">
-    <title>{{ ucfirst(Route::current()->uri) }}</title>
+    <title>H4H - @yield('title')</title>
 </head>
 
 <body>

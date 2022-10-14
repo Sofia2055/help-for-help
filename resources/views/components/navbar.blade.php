@@ -1,7 +1,10 @@
 @php
 function getIfActive($url)
 {
-    if (Route::current()->uri == $url) {
+    $position = strpos(Route::current()->uri, '{');
+    $currentRoute = substr(Route::current()->uri, 0, $position == false ? strlen(Route::current()->uri) : $position - 1);
+
+    if (str_contains($currentRoute, $url )) {
         return 'active fw-bold';
     }
     else{
@@ -12,13 +15,13 @@ function getIfActive($url)
 
 <nav class="navbar navbar-expand-lg bg-light p-0">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="{{ url('img/logo-k.png') }}" width="70" height="70" class="me-2">Help for help</a>
+        <a class="navbar-brand mx-auto" href="{{ url('/') }}"><img src="{{ url('img/logo-k.png') }}" height="70" class="me-2">Help for help</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 @guest
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('login') !!}" aria-current="page"
@@ -40,7 +43,7 @@ function getIfActive($url)
                         href="{{ url('/form') }}">Giving Back</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('resources') !!}" aria-current="page"
+                    <a class="nav-link {!! getIfActive('resource') !!}" aria-current="page"
                         href="{{ url('/resources') }}">Resources</a>
                 </li>
                 <li class="nav-item">

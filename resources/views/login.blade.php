@@ -1,4 +1,5 @@
 <x-body>
+    @section('title', 'Login')
     <div class="jumbotron vertical-center">
         <div class="container">
             <div class="row">

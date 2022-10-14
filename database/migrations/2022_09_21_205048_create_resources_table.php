@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('product_name');
             $table->string('email');
-            $table->string('description');
+            $table->longText('description');
             $table->string('state');
             $table->integer('resources_quantity');
             $table->integer('given_quantity');

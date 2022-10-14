@@ -1,4 +1,5 @@
 <x-body>
+    @section('title', "$resource->product_name resource")
     <div class="jumbotron vertical-center">
         <div class="container">
             <div class="row">
@@ -20,7 +21,7 @@
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">State: {{ $resource->state }}</li>
                                             <li class="list-group-item">Available quantity: {{ $resource->available_quantity }}</li>
-                                            <li class="list-group-item">{{ $resource->center->name }}</li>
+                                            <li class="list-group-item">Centro {{ $resource->center->name }}</li>
                                         </ul>
                                         @auth
                                             <div class="card-footer">
