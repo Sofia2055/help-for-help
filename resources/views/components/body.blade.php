@@ -18,6 +18,7 @@
 
     {{ $slot }}
 
+    <x-footer/>
     <x-flashmessage/>
 
     <script>

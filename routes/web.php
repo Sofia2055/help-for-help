@@ -16,7 +16,9 @@ use Illuminate\Validation\ValidationException;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'centers' => \App\Models\Center::All()
+    ]);
 });
 
 Route::get('/login', function () {

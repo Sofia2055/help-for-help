@@ -15,13 +15,13 @@ function getIfActive($url)
 
 <nav class="navbar navbar-expand-lg bg-light p-0">
     <div class="container-fluid">
-        <a class="navbar-brand mx-auto" href="{{ url('/') }}"><img src="{{ url('img/logo-k.png') }}" height="70" class="me-2">Help for help</a>
+        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('img/logo-k.png') }}" height="70" class="me-2">Help for help</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 @guest
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('login') !!}" aria-current="page"
