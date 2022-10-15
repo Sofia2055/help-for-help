@@ -91,9 +91,9 @@ class DatabaseSeeder extends Seeder
        // center_id = 1
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! Fundación Poma',
-            'description' => 'Inagurado en el año 2011 gracias a la Fundación Poma, al convenio firmado
-            entre la Fundación Sagrera Palomo, USAID en el 2010, y gran aporte de Microsoft El Salvador
-            y la donacion de licencias de Microsoft Office.
+            'description' => 'Inaugurated in 2011 thanks to the Poma Foundation,
+             the agreement signed between the Sagrera Palomo Foundation, USAID in 2010 and the great contribution of Microsoft El Salvador
+             and the donation of Microsoft Office licenses.
             Teléfono: 2229 7239',
             'address' => '4 Calle Pte. entre 10av y, 8 Avenida Sur 5-4, Santa Tecla'
         ]);
@@ -101,8 +101,8 @@ class DatabaseSeeder extends Seeder
         // center_id = 2
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! ADOC',
-            'description' => 'Se inauguró en el año 2008 gracias a la iniciativa de la Fundación ADOC
-            y gran aporte de Microsoft El Salvador y la donacion de licencias de Microsoft Office.
+            'description' => 'It was inaugurated in 2008 thanks to the initiative of the ADOC Foundation
+            and the great contribution of Microsoft El Salvador and the donation of Microsoft Office licenses.
             Teléfono: 2277 0488',
             'address' => 'MRWW+782, CA-1, San Salvador'
         ]);
@@ -110,9 +110,9 @@ class DatabaseSeeder extends Seeder
         // center_id = 3
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! Fundación Raíces',
-            'description' => 'Grupo Scout 12 "Los Conacastecos
-            Inicio sus operaciones en el año 2013 gracias al trabajo de Fundación Raíces y
-            gran aporte de Microsoft El Salvador y la donacion de licencias de Microsoft Office.
+            'description' => 'Scout Group 12 "Los Conacastecos".
+            Started its operations in 2013 thanks to the work of Fundación Raíces
+            and the great contribution of Microsoft El Salvador and the donation of Microsoft Office licenses.
             Teléfono: 2292 8464',
             'address' => ' PV95+3Q9, Soyapango'
         ]);
@@ -120,8 +120,8 @@ class DatabaseSeeder extends Seeder
         // center_id = 4
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! Merlet',
-            'description' => 'Inagurado en el 2011 gracias a la Fundación Frech y USAID en el 2010
-            y la valiosa donacion de licencias de Microsoft Office por Microsoft El Salvador.
+            'description' => 'Inaugurated in 2011 thanks to the Frech Foundation and USAID in 2010
+            and the valuable donation of Microsoft Office licenses by Microsoft El Salvador.
             Teléfono: 2212 7500',
             'address' => 'Calle Circunvalación, Poligono D #17, Plan de La Laguna'
         ]);
@@ -129,9 +129,9 @@ class DatabaseSeeder extends Seeder
         // center_id = 5
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! Hilasal',
-            'description' => 'Fue una iniciativa de la Fundacion Sagrera Polomo. Se inaguró en el año
-            2004, gracias a la iniciativo de Responsabilidades Social Empresarial Hilasal y gracias al aporte
-            significativo de Microsoft con las licencias de Microsoft Office.
+            'description' => 'It was an initiative of the Sagrera Palomo Foundation, started in 2004,
+             thanks to the initiative of Corporate Social Responsibility Hilasal and
+             thanks to the significant contribution of Microsoft with Microsoft Office licenses.
             Teléfono: 2319 1203',
             'address' => ' QJW6+896, Sitio del Niño'
         ]);
@@ -139,8 +139,8 @@ class DatabaseSeeder extends Seeder
         // center_id = 6
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! Grupo Q ',
-            'description' => 'Se unio a ¡Supérate! en el año 2018 como patrocinador del Centro en San Miguel,
-            El Salvador gracias a la valiosa donación  de Microsoft El Salvador.
+            'description' => 'Joined ¡Superate! in 2018 as a sponsor of the San Miguel,
+             El Salvador Center thanks to a valuable donation from Microsoft El Salvador.
             Teléfono: 2606 0976',
             'address' => '9A Calle Oriente, San Miguel'
         ]);
