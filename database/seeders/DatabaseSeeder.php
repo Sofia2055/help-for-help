@@ -21,8 +21,69 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        \App\Models\User::factory(5)->create([
+        \App\Models\User::factory()->create([
+            'email' => 'administrator@poma.superate.org.sv',
+            'center_id' => 1
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'administrator@adoc.superate.org.sv',
             'center_id' => 2
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'administrator@raices.superate.org.sv',
+            'center_id' => 3
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'administrator@merlet.superate.org.sv',
+            'center_id' => 4
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'administrator@hilasal.superate.org.sv',
+            'center_id' => 5
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'administrator@grupoq.superate.org.sv',
+            'center_id' => 6
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'cristian.alfaro2023@poma.superate.org.sv',
+            'center_id' => 1
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'fatima.vasquez2023@poma.superate.org.sv',
+            'center_id' => 1
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'alejandra.olivares2023@poma.superate.org.sv',
+            'center_id' => 1
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'kenny.cornelio2023@poma.superate.org.sv',
+            'center_id' => 1
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'salvador.zavala2023@poma.superate.org.sv',
+            'center_id' => 1
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'francisco.rauda2023@poma.superate.org.sv',
+            'center_id' => 1
+        ]);
+
+        \App\Models\User::factory()->create([
+            'email' => 'daniela.acosta@poma.superate.org.sv',
+            'center_id' => 1
         ]);
 
 // ¡Superate!'s centers
