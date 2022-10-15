@@ -105,6 +105,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'It was inaugurated in 2008 thanks to the initiative of the ADOC Foundation
             and the great contribution of Microsoft El Salvador and the donation of Microsoft Office licenses.',
             'phone' => '2277 0488',
+            'email' => 'info@adoc.superate.org.sv',
             'address' => 'MRWW+782, CA-1, San Salvador'
         ]);
 
@@ -115,6 +116,7 @@ class DatabaseSeeder extends Seeder
             Started its operations in 2013 thanks to the work of Fundación Raíces
             and the great contribution of Microsoft El Salvador and the donation of Microsoft Office licenses.',
             'phone' => '2292 8464',
+            'email' => 'info@raices.superate.org.sv',
             'address' => ' PV95+3Q9, Soyapango'
         ]);
 
@@ -124,7 +126,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Inaugurated in 2011 thanks to the Frech Foundation and USAID in 2010
             and the valuable donation of Microsoft Office licenses by Microsoft El Salvador.',
             'phone' => '2212 7500',
-            'email' => 'dirección.superate@imerlet.com',
+            'email' => 'info@merlet.superate.org.sv',
             'address' => 'Calle Circunvalación, Poligono D #17, Plan de La Laguna'
         ]);
 
@@ -135,6 +137,7 @@ class DatabaseSeeder extends Seeder
              thanks to the initiative of Corporate Social Responsibility Hilasal and
              thanks to the significant contribution of Microsoft with Microsoft Office licenses.',
             'phone' => '2319 1203',
+            'email' => 'info@hilasal.superate.org.sv',
             'address' => ' QJW6+896, Sitio del Niño'
         ]);
 
@@ -144,6 +147,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Joined ¡Superate! in 2018 as a sponsor of the San Miguel,
              El Salvador Center thanks to a valuable donation from Microsoft El Salvador.',
             'phone' => '2606 0976',
+            'email' => 'info@grupoq.superate.org.sv',
             'address' => '9A Calle Oriente, San Miguel'
         ]);
 
