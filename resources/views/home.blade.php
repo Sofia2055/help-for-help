@@ -50,8 +50,9 @@
                             </div>
                             <div class="col-12 align-self-end">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Address: {{ $center->address }}</li>
+                                    <li class="list-group-item">Phone: {{ $center->phone }}</li>
                                     <li class="list-group-item">Email: {{ $center->email }}</li>
+                                    <li class="list-group-item">Address: {{ $center->address }}</li>
                                 </ul>
                             </div>
                         </div>

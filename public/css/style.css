@@ -110,3 +110,7 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+
+.page-container{
+    min-height: calc(100vh - 80px);
+}
