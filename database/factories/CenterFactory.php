@@ -21,6 +21,7 @@ class centerFactory extends Factory
             'name' => "Centro Superate ".fake()->name(),
             'description' => fake()->paragraph(),
             'address' => fake()->paragraph(),
+            'phone' => fake()->word(),
         ];
     }
 

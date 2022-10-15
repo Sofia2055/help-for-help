@@ -93,8 +93,9 @@ class DatabaseSeeder extends Seeder
             'name' => '¡Supérate! Fundación Poma',
             'description' => 'Inaugurated in 2011 thanks to the Poma Foundation,
              the agreement signed between the Sagrera Palomo Foundation, USAID in 2010 and the great contribution of Microsoft El Salvador
-             and the donation of Microsoft Office licenses.
-            Teléfono: 2229 7239',
+             and the donation of Microsoft Office licenses.',
+            'phone' => '2229 7239',
+            'email' => 'info@poma.superate.org.sv',
             'address' => '4 Calle Pte. entre 10av y, 8 Avenida Sur 5-4, Santa Tecla'
         ]);
 
@@ -102,8 +103,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! ADOC',
             'description' => 'It was inaugurated in 2008 thanks to the initiative of the ADOC Foundation
-            and the great contribution of Microsoft El Salvador and the donation of Microsoft Office licenses.
-            Teléfono: 2277 0488',
+            and the great contribution of Microsoft El Salvador and the donation of Microsoft Office licenses.',
+            'phone' => '2277 0488',
             'address' => 'MRWW+782, CA-1, San Salvador'
         ]);
 
@@ -112,8 +113,8 @@ class DatabaseSeeder extends Seeder
             'name' => '¡Supérate! Fundación Raíces',
             'description' => 'Scout Group 12 "Los Conacastecos".
             Started its operations in 2013 thanks to the work of Fundación Raíces
-            and the great contribution of Microsoft El Salvador and the donation of Microsoft Office licenses.
-            Teléfono: 2292 8464',
+            and the great contribution of Microsoft El Salvador and the donation of Microsoft Office licenses.',
+            'phone' => '2292 8464',
             'address' => ' PV95+3Q9, Soyapango'
         ]);
 
@@ -121,8 +122,9 @@ class DatabaseSeeder extends Seeder
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! Merlet',
             'description' => 'Inaugurated in 2011 thanks to the Frech Foundation and USAID in 2010
-            and the valuable donation of Microsoft Office licenses by Microsoft El Salvador.
-            Teléfono: 2212 7500',
+            and the valuable donation of Microsoft Office licenses by Microsoft El Salvador.',
+            'phone' => '2212 7500',
+            'email' => 'dirección.superate@imerlet.com',
             'address' => 'Calle Circunvalación, Poligono D #17, Plan de La Laguna'
         ]);
 
@@ -131,8 +133,8 @@ class DatabaseSeeder extends Seeder
             'name' => '¡Supérate! Hilasal',
             'description' => 'It was an initiative of the Sagrera Palomo Foundation, started in 2004,
              thanks to the initiative of Corporate Social Responsibility Hilasal and
-             thanks to the significant contribution of Microsoft with Microsoft Office licenses.
-            Teléfono: 2319 1203',
+             thanks to the significant contribution of Microsoft with Microsoft Office licenses.',
+            'phone' => '2319 1203',
             'address' => ' QJW6+896, Sitio del Niño'
         ]);
 
@@ -140,8 +142,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\Center::factory()->create([
             'name' => '¡Supérate! Grupo Q ',
             'description' => 'Joined ¡Superate! in 2018 as a sponsor of the San Miguel,
-             El Salvador Center thanks to a valuable donation from Microsoft El Salvador.
-            Teléfono: 2606 0976',
+             El Salvador Center thanks to a valuable donation from Microsoft El Salvador.',
+            'phone' => '2606 0976',
             'address' => '9A Calle Oriente, San Miguel'
         ]);
 

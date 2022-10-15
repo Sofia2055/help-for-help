@@ -143,9 +143,9 @@ Route::post('/create/resource', function() {
     }*/
 
     if(request()->hasFile('images')){
-        $counter = 0;
+        $counter = 1;
         foreach (request()->file('images') as $image) {
-            $image->storeAs('resources-img', "$resource->id-$i.jpg", 'public');
+            $image->storeAs('resources-img', "$resource->id-$counter.jpg", 'public');
             $counter++;
             if($counter >= 6){
                 break;
@@ -154,4 +154,17 @@ Route::post('/create/resource', function() {
     }
 
     return redirect('/')->with('success', 'Your resource request has been created successfully, please try to bring the resource as soon as posible to the center you have selected');;
+});
+
+Route::get('/refresh', function () {
+    $exitCode = Artisan::call('migrate:refresh', [
+        '--seed' => true
+    ]);
+
+    if($exitCode == 0){
+        return redirect('/')->with('success', 'Database information refreshed successfully');
+    }
+    else{
+        return redirect('/')->with('error', 'Database information refresh failed');
+    }
 });

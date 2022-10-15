@@ -14,15 +14,18 @@
 </head>
 
 <body>
-    <x-navbar/>
+    <x-navbar />
 
-    {{ $slot }}
+    <div class="page-container d-flex flex-column justify-content-between">
+        {{ $slot }}
 
-    <x-footer/>
-    <x-flashmessage/>
+        <x-footer />
+    </div>
+
+    <x-flashmessage />
 
     <script>
-        function QuitInvalid(input){
+        function QuitInvalid(input) {
             input.className = input.className.replace('is-invalid', '');
         }
     </script>
