@@ -147,9 +147,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 1
         \App\Models\Resource::factory()->create([
-            'product_name' => "Sacapuntas",
+            'product_name' => "pencil sharpener",
             'center_id' => 1,
-            'description' => 'Sacapuntas de metal',
+            'description' => 'They are metal pencil sharpeners',
             'resources_quantity' => 4,
             'given_quantity' => 0,
             'state' => 'new',
@@ -158,9 +158,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 2
         \App\Models\Resource::factory()->create([
-            'product_name' => "Colores New Elite ",
+            'product_name' => "New Elite Colors",
             'center_id' => 1,
-            'description' => 'Contiene 12 colores punta gruesa ',
+            'description' => 'Contains 12 thick tip colors',
             'resources_quantity' => 2,
             'given_quantity' => 0,
             'state' => 'new',
@@ -169,9 +169,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 3
         \App\Models\Resource::factory()->create([
-            'product_name' => "Juego de reglas ",
+            'product_name' => "Set of rules ",
             'center_id' => 1,
-            'description' => 'contiene 4 diferentes reglas',
+            'description' => 'Contains 4 different types of rules',
             'resources_quantity' => 2,
             'given_quantity' => 0,
             'state' => 'as new',
@@ -180,9 +180,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 4
         \App\Models\Resource::factory()->create([
-            'product_name' => "Crayolas Facela",
+            'product_name' => "Facela Crayons",
             'center_id' => 1,
-            'description' => 'Contiene 12 crayolas de cera',
+            'description' => 'Contains 12 wax crayons',
             'resources_quantity' => 1,
             'given_quantity' => 0,
             'state' => 'used',
@@ -191,9 +191,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 5
         \App\Models\Resource::factory()->create([
-            'product_name' => "Borrador Parrot",
+            'product_name' => "Parrot Eraser",
             'center_id' => 1,
-            'description' => 'color blanco y suave',
+            'description' => 'It is white and soft',
             'resources_quantity' => 1,
             'given_quantity' => 0,
             'state' => 'new',
@@ -202,9 +202,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 6
         \App\Models\Resource::factory()->create([
-            'product_name' => "Borrador Facela",
+            'product_name' => "Facela Eraser",
             'center_id' => 1,
-            'description' => 'Borrador suave y blanco',
+            'description' => 'Soft and white eraser',
             'resources_quantity' => 1,
             'given_quantity' => 0,
             'state' => 'new',
@@ -214,9 +214,9 @@ class DatabaseSeeder extends Seeder
         //Resource 7
         //Falta fotografia
         \App\Models\Resource::factory()->create([
-            'product_name' => "Colores Surtidos",
+            'product_name' => "Assorted Colors",
             'center_id' => 1,
-            'description' => 'Colores doble punta, 44 colores de diferentes tonos, bicolor',
+            'description' => 'Double-ended colors, 44 colors of different shades, bicolor',
             'resources_quantity' => 44,
             'given_quantity' => 0,
             'state' => 'used',
@@ -225,9 +225,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 8
         \App\Models\Resource::factory()->create([
-            'product_name' => "Colores Facela ",
+            'product_name' => "Facela Colors",
             'center_id' => 1,
-            'description' => 'Trae 12 colores cada caja',
+            'description' => '12 colors in each box',
             'resources_quantity' => 2,
             'given_quantity' => 0,
             'state' => 'new',
@@ -236,9 +236,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 9
         \App\Models\Resource::factory()->create([
-            'product_name' => "Estuche ",
+            'product_name' => "Pencil case",
             'center_id' => 1,
-            'description' => 'Estuche para lapices de metal',
+            'description' => 'Metal foil case',
             'resources_quantity' => 1,
             'given_quantity' => 0,
             'state' => 'as new',
@@ -247,9 +247,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 10
         \App\Models\Resource::factory()->create([
-            'product_name' => "Tijera",
+            'product_name' => "Scissor",
             'center_id' => 1,
-            'description' => 'Tijera color azul de metal',
+            'description' => 'Blue metal scissor',
             'resources_quantity' => 1,
             'given_quantity' => 0,
             'state' => 'new',
@@ -258,9 +258,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 11
         \App\Models\Resource::factory()->create([
-            'product_name' => "Lapiceros",
+            'product_name' => "Pens",
             'center_id' => 1,
-            'description' => 'colores disponibles: rojo, negro y azul surtidos',
+            'description' => 'Available colors: assorted red, black and blue',
             'resources_quantity' => 6,
             'given_quantity' => 0,
             'state' => 'used',
@@ -269,9 +269,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 12
         \App\Models\Resource::factory()->create([
-            'product_name' => "Caja de colores Falcon",
+            'product_name' => "Falcon color box",
             'center_id' => 1,
-            'description' => ' 12 colores x caja y bicolores',
+            'description' => '12 colors per box and bicolors',
             'resources_quantity' => 3,
             'given_quantity' => 0,
             'state' => 'as new',
@@ -280,9 +280,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 13
         \App\Models\Resource::factory()->create([
-            'product_name' => "Crayolas",
+            'product_name' => "Crayons",
             'center_id' => 1,
-            'description' => 'Colores surtidos',
+            'description' => 'Assorted colors',
             'resources_quantity' => 5,
             'given_quantity' => 0,
             'state' => 'used',
@@ -291,9 +291,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 14
         \App\Models\Resource::factory()->create([
-            'product_name' => "Regla",
+            'product_name' => "Ruler",
             'center_id' => 1,
-            'description' => 'Regla de metal color azul 30 cm',
+            'description' => 'Blue metal ruler 30 cm',
             'resources_quantity' => 1,
             'given_quantity' => 0,
             'state' => 'as new',
@@ -302,9 +302,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 15
         \App\Models\Resource::factory()->create([
-            'product_name' => "Plumones",
+            'product_name' => "Marker pens",
             'center_id' => 1,
-            'description' => '17 diferentes plumones',
+            'description' => '17 different markers',
             'resources_quantity' => 17,
             'given_quantity' => 0,
             'state' => 'used',
@@ -313,9 +313,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 16
         \App\Models\Resource::factory()->create([
-            'product_name' => "Cuadernos",
+            'product_name' => "Notebooks",
             'center_id' => 1,
-            'description' => 'Rayados y cuadriculados con espiral',
+            'description' => 'Lined and spiral grids',
             'resources_quantity' => 57,
             'given_quantity' => 0,
             'state' => 'used',
@@ -324,9 +324,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 17
         \App\Models\Resource::factory()->create([
-            'product_name' => "Libreta papel bond ",
+            'product_name' => "Bond paper notebook ",
             'center_id' => 1,
-            'description' => 'paginas blancas tamaño oficio de 100 paginas',
+            'description' => '100-page legal size white pages',
             'resources_quantity' => 1,
             'given_quantity' => 0,
             'state' => 'new',
@@ -335,9 +335,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 18
         \App\Models\Resource::factory()->create([
-            'product_name' => "Paginas de papel bond ralladas",
+            'product_name' => "Pages of grated bond paper",
             'center_id' => 1,
-            'description' => '150 paginas de papel bond ralladas',
+            'description' => '150 pages of shredded bond paper',
             'resources_quantity' => 150,
             'given_quantity' => 0,
             'state' => 'used',
@@ -346,9 +346,9 @@ class DatabaseSeeder extends Seeder
 
         //Resource 19
         \App\Models\Resource::factory()->create([
-            'product_name' => "Libros Oxford",
+            'product_name' => "Oxford Books",
             'center_id' => 1,
-            'description' => 'Libros "reading and writing" Oxford',
+            'description' => 'Oxford "read and write" books',
             'resources_quantity' => 5,
             'given_quantity' => 0,
             'state' => 'used',
@@ -358,11 +358,11 @@ class DatabaseSeeder extends Seeder
         //Resource 20
         //Falta Fotografias
         \App\Models\Resource::factory()->create([
-            'product_name' => "Libros servicios educativos(lenguaje,sociales,
-            moral urbanidad y civica, y ciencias)",
+            'product_name' => "Books educational services (language, social,
+            morals, civics, and science)",
             'center_id' => 1,
-            'description' => 'Libros de primer año bachillerato de lenguaje,sociales,
-            moral urbanidad y civica, y ciencias',
+            'description' => 'First year baccalaureate books of language, social, moral, civics, and science,
+            morals, civics and civics, and science',
             'resources_quantity' => 4,
             'given_quantity' => 0,
             'state' => 'used',
