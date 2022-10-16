@@ -22,6 +22,7 @@ class centerFactory extends Factory
             'description' => fake()->paragraph(),
             'address' => fake()->paragraph(),
             'phone' => fake()->word(),
+            'email' => fake()->safeEmail(),
         ];
     }
 

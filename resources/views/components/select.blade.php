@@ -10,26 +10,26 @@
     ],
 ])
 
-@if ($floating)
-    <div class="form-floating">
-@endif
 
-<select name="{{ $name }}"
-    class="form-select form-select-lg {{ $errors->has($name) ? 'is-invalid' : 'mb-3' }} {{ $fontSize }}"
-    {{ $required == true ? 'required' : '' }}>
-    <option selected>{{ $placeholder }}</option>
-    @foreach ($options as $value => $option)
-        <option value="{{ $value }}">{{ $option }}</option>
-    @endforeach
-</select>
+<div class="input-group">
+    <div class="@if ($floating) form-floating @endif">
+        <select name="{{ $name }}"
+            class="form-select form-select-lg {{ $errors->has($name) ? 'is-invalid' : 'mb-3' }} {{ $fontSize }}"
+            {{ $required == true ? 'required' : '' }} id="floatingSelect{{ $name }}">
+            <option selected>{{ $placeholder }}</option>
+            @foreach ($options as $value => $option)
+                <option value="{{ $value }}">{{ $option }}</option>
+            @endforeach
+        </select>
 
-@if ($floating)
-    <label for="floatingSelect">{{ $label }}</label>
+        @if ($floating)
+            <label for="floatingSelect{{ $name }}">{{ $label }}</label>
+        @endif
     </div>
-@endif
 
-@error($name)
-    <div class="invalid-feedback mb-3">
-        {{ $message }}
-    </div>
-@enderror
+    @error($name)
+        <div class="invalid-feedback mb-3" style="display: block !important;">
+            {{ $message }}
+        </div>
+    @enderror
+</div>

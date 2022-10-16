@@ -29,10 +29,6 @@ Route::get('tutorial', function () {
     return view('tutorial');
 });
 
-Route::get('/centers', function (){
-    return \App\Models\Center::All();
-});
-
 Route::get('/form', function() {
     return view('form', [
         'centers' => \App\Models\Center::All()
@@ -125,7 +121,7 @@ Route::post('/create/resource', function() {
         'product_name' => 'required|max:255',
         'email' => 'required|email|max:255',
         'description' => 'required|max:750',
-        'state' => 'required|max:10',
+        'state' => 'required|max:15',
         'resources_quantity'=> 'required|numeric',
         'center_id' => 'required|numeric',
         'images' => 'required'
@@ -157,11 +153,24 @@ Route::post('/create/resource', function() {
 });
 
 Route::get('/refresh', function () {
+    $beforeResourcesid = \App\Models\Resource::All()->last()->id;
+
     $exitCode = Artisan::call('migrate:refresh', [
         '--seed' => true
     ]);
 
+
     if($exitCode == 0){
+        $afterResourcesid = \App\Models\Resource::All()->last()->id;
+        for ($i= $afterResourcesid + 1; $i <= $beforeResourcesid; $i++) {
+            for ($j=1; $j <= 6; $j++) {
+                $file = 'resources-img/' . $i . '-' . $j . '.jpg';
+                if(Storage::disk('public')->exists($file)){
+                    Storage::disk('public')->delete($file);
+                }
+            }
+        }
+
         return redirect('/')->with('success', 'Database information refreshed successfully');
     }
     else{

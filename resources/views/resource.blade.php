@@ -22,8 +22,7 @@
                                             <li class="list-group-item">State: {{ $resource->state }}</li>
                                             <li class="list-group-item">Available quantity: {{ $resource->available_quantity }}</li>
                                             <li class="list-group-item">Centro {{ $resource->center->name }}</li>
-                                            <li class="list-group-item">Phone: {{ $resource->center->phone }}</li>
-                                            <li class="list-group-item">Email: {{ $resource->center->email }}</li>
+                                            <li class="list-group-item">Phone: {{ $resource->center->phone }} | Email: {{ $resource->center->email }}</li>
                                             <li class="list-group-item">Address: {{ $resource->center->address }}</li>
                                         </ul>
                                         @auth
