@@ -153,7 +153,7 @@ class DatabaseSeeder extends Seeder
 
         //Resource 1
         \App\Models\Resource::factory()->create([
-            'product_name' => "pencil sharpener",
+            'product_name' => "Pencil sharpener",
             'center_id' => 1,
             'description' => 'They are metal pencil sharpeners',
             'resources_quantity' => 4,
@@ -218,7 +218,6 @@ class DatabaseSeeder extends Seeder
         ]);
 
         //Resource 7
-        //Falta fotografia
         \App\Models\Resource::factory()->create([
             'product_name' => "Assorted Colors",
             'center_id' => 1,
@@ -361,18 +360,6 @@ class DatabaseSeeder extends Seeder
             'received' => true
         ]);
 
-        //Resource 20
-        //Falta Fotografias
-        \App\Models\Resource::factory()->create([
-            'product_name' => "Books educational services (language, social,
-            morals, civics, and science)",
-            'center_id' => 1,
-            'description' => 'First year baccalaureate books of language, social, moral, civics, and science,
-            morals, civics and civics, and science',
-            'resources_quantity' => 4,
-            'given_quantity' => 0,
-            'state' => 'used',
-            'received' => false
-        ]);
+
     }
 }
