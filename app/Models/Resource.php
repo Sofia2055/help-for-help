@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 
 class Resource extends Model
 {
@@ -14,11 +15,16 @@ class Resource extends Model
 
     protected $appends = [
         'images',
-        'available_quantity'
+        'available_quantity',
+        'can_be_modified'
     ];
 
     public function center(){
         return $this->belongsTo(Center::class);
+    }
+
+    public function getProductNameAttribute(){
+        return ucfirst($this->attributes['product_name']);
     }
 
     public function getAvailableQuantityAttribute(){
@@ -27,6 +33,19 @@ class Resource extends Model
 
     public function getImagesAttribute(){
         return $this->images();
+    }
+
+    public function getCanBeModifiedAttribute(){
+        if(!Auth::check()){
+            return false;
+        }
+
+        if(Auth::user()->center_id == $this->center_id){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public function images(){
