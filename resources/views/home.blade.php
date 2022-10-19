@@ -15,7 +15,8 @@
                 <div class="card my-4">
                     <div class="row g-0">
                         <div class="col-8 offset-2 offset-md-0 col-md-3">
-                            <img src="img/logo-k.png" width="100%" class="p-4">
+                            <img src="img/logo-k.png" width="80%" class="p-3">
+                            <img src="img/Logo Back to.png" width="100%" class="p-4">
                         </div>
                         <div class="col-md-9">
                             <div class="row">
@@ -30,7 +31,14 @@
                                         <p>We seek to promote a circular economic system between ¡Supérate! Active
                                             students, alumni, and families. That way, unused products can have a new
                                             purpose, and students can reutilize them according to their needs.</p>
-                                    </div>
+                                        <h6 class="card-title fs-2">Mission</h6>
+                                        <p>Our mission is to "back to reality" and help people who had difficulties in the pandemic and encourage others to help.</p>
+
+
+
+
+
+                                        </div>
                                 </div>
                             </div>
                         </div>
