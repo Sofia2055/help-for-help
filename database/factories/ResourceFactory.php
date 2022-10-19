@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Resources>
  */
-class resourceFactory extends Factory
+class ResourceFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -30,8 +30,4 @@ class resourceFactory extends Factory
             'received' => (bool)random_int(0,1),
         ];
     }
-
-
-  
-    
 }

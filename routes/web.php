@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Center;
+use App\Models\Resource;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
@@ -17,7 +19,7 @@ use Illuminate\Validation\ValidationException;
 
 Route::get('/', function () {
     return view('home', [
-        'centers' => \App\Models\Center::All()
+        'centers' => Center::All()
     ]);
 });
 
@@ -29,20 +31,20 @@ Route::get('tutorial', function () {
     return view('tutorial');
 });
 
-Route::get('/form', function() {
+Route::get('/form', function () {
     return view('form', [
-        'centers' => \App\Models\Center::All()
+        'centers' => Center::All()
     ]);
 });
 
-Route::get('/form2', function() {
+Route::get('/form2', function () {
     return view('form2');
 });
 
 Route::get('/resources', function () {
-    $resources = \App\Models\Resource::WhereRaw('given_quantity < resources_quantity');
+    $resources = Resource::WhereRaw('given_quantity < resources_quantity');
 
-    if(!Auth::check()){
+    if (!Auth::check()) {
         $resources->Where('received', '=', '1');
     }
 
@@ -52,14 +54,14 @@ Route::get('/resources', function () {
 });
 
 
-Route::get('/resource/{resource}', function (\App\Models\Resource $resource) {
+Route::get('/resource/{resource}', function (Resource $resource) {
     return view('resource', [
         'resource' => $resource
     ]);
 });
 
-Route::get('/resource/{resource}/received', function (\App\Models\Resource $resource) {
-    if(!Auth::check()){
+Route::get('/resource/{resource}/received', function (Resource $resource) {
+    if (!Auth::check()) {
         return back()->with('error', "You must be logged in to make changes");
     }
 
@@ -68,8 +70,8 @@ Route::get('/resource/{resource}/received', function (\App\Models\Resource $reso
     return back()->with('success', 'The resource has been marked as received successfully');
 });
 
-Route::post('/resource/{resource}/given', function (\App\Models\Resource $resource) {
-    if(!Auth::check()){
+Route::post('/resource/{resource}/given', function (Resource $resource) {
+    if (!Auth::check()) {
         return back()->with('error', "You must be logged in to make changes");
     }
 
@@ -79,15 +81,16 @@ Route::post('/resource/{resource}/given', function (\App\Models\Resource $resour
 
     $quantity = $attributes['quantity'];
 
-    if($resource->received == false){
+    if ($resource->received == false) {
         return back()->with('error', "It cannot be given a product that we don't have");
     }
 
     $resource->given_quantity += $quantity;
 
-    if($resource->resources_quantity < $resource->given_quantity){
+    if ($resource->resources_quantity < $resource->given_quantity) {
         $resource->refresh();
-        return back()->with('error', "There is not much quantity available, maximun can be $resource->available_quantity");
+        return back()->with('error',
+            "There is not much quantity available, maximun can be $resource->available_quantity");
     }
 
     $resource->save();
@@ -100,7 +103,7 @@ Route::post('/login', function () {
         'password' => 'required|max:255'
     ]);
 
-    if(!auth()->attempt($attributes, request()->get('remember'))){
+    if (!auth()->attempt($attributes, request()->get('remember'))) {
         throw ValidationException::withMessages([
             'email' => 'Credentials are incorrect',
         ]);
@@ -116,13 +119,13 @@ Route::get('/logout', function () {
     return redirect('/')->with('success', 'Logged out sucessfully!');
 });
 
-Route::post('/create/resource', function() {
+Route::post('/create/resource', function () {
     $checkData = request()->validate([
         'product_name' => 'required|max:255',
         'email' => 'required|email|max:255',
         'description' => 'required|max:750',
         'state' => 'required|max:15',
-        'resources_quantity'=> 'required|numeric',
+        'resources_quantity' => 'required|numeric',
         'center_id' => 'required|numeric',
         'images' => 'required'
     ]);
@@ -130,7 +133,7 @@ Route::post('/create/resource', function() {
     $checkData['given_quantity'] = 0;
     $checkData['received'] = false;
 
-    $resource = \App\Models\Resource::create($checkData);
+    $resource = Resource::create($checkData);
 
     /*for ($i=1; $i <= 10; $i++) {
         if(request()->hasFile("image$i")){
@@ -138,42 +141,42 @@ Route::post('/create/resource', function() {
         }
     }*/
 
-    if(request()->hasFile('images')){
+    if (request()->hasFile('images')) {
         $counter = 1;
         foreach (request()->file('images') as $image) {
             $image->storeAs('resources-img', "$resource->id-$counter.jpg", 'public');
             $counter++;
-            if($counter >= 6){
+            if ($counter >= 6) {
                 break;
             }
         }
     }
 
-    return redirect('/')->with('success', 'Your resource request has been created successfully, please try to bring the resource as soon as posible to the center you have selected');;
+    return redirect('/')->with('success',
+        'Your resource request has been created successfully, please try to bring the resource as soon as posible to the center you have selected');
 });
 
 Route::get('/refresh', function () {
-    $beforeResourcesid = \App\Models\Resource::All()->last()->id;
+    $beforeResourcesid = Resource::All()->last()->id;
 
     $exitCode = Artisan::call('migrate:refresh', [
         '--seed' => true
     ]);
 
 
-    if($exitCode == 0){
-        $afterResourcesid = \App\Models\Resource::All()->last()->id;
-        for ($i= $afterResourcesid + 1; $i <= $beforeResourcesid; $i++) {
-            for ($j=1; $j <= 6; $j++) {
-                $file = 'resources-img/' . $i . '-' . $j . '.jpg';
-                if(Storage::disk('public')->exists($file)){
+    if ($exitCode == 0) {
+        $afterResourcesid = Resource::All()->last()->id;
+        for ($i = $afterResourcesid + 1; $i <= $beforeResourcesid; $i++) {
+            for ($j = 1; $j <= 6; $j++) {
+                $file = 'resources-img/'.$i.'-'.$j.'.jpg';
+                if (Storage::disk('public')->exists($file)) {
                     Storage::disk('public')->delete($file);
                 }
             }
         }
 
         return redirect('/')->with('success', 'Database information refreshed successfully');
-    }
-    else{
+    } else {
         return redirect('/')->with('error', 'Database information refresh failed');
     }
 });

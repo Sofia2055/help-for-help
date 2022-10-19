@@ -2,15 +2,15 @@
 
 namespace Database\Factories;
 
+use App\Models\Resources;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Resources>
+ * @extends Factory<Resources>
  */
-class centerFactory extends Factory
+class CenterFactory extends Factory
 {
-  /**
+    /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
@@ -25,6 +25,4 @@ class centerFactory extends Factory
             'email' => fake()->safeEmail(),
         ];
     }
-
-
 }
