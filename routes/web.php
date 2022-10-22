@@ -27,7 +27,7 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('tutorial', function () {
+Route::get('tutorial2', function () {
     return view('tutorial');
 });
 
