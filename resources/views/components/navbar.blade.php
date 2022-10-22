@@ -36,7 +36,7 @@ function getIfActive($url)
                 @endauth
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('tutorial') !!}" aria-current="page"
-                        href="{{ url('/tutorial') }}">Tutorial</a>
+                        href="{{ url('/tutorial2') }}">Tutorial</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('form') !!}" aria-current="page"
