@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="col-10 offset-1">
-            <div class="row row-cols-1 row-cols-sm- 2row-cols-md-3 row-cols-lg-3 g-3">
+            <div class="row row-cols-1 row-cols-sm-2 2row-cols-md-3 row-cols-lg-3 g-3">
                 @foreach ($centers as $center)
                     <div class="col">
                         <div class="card h-100">
