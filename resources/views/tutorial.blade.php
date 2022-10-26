@@ -12,7 +12,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                Hacer click en el boton de Giving back
+                Click in the Giving back buttom
 
 
 
@@ -27,7 +27,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-               Llena el formulario con los datos correctos
+                Fill in the form with the correct information
             </div>
         </div>
 
@@ -38,7 +38,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                Elige el estado del producto
+                Choose the state of the resource
             </div>
         </div>
 
@@ -49,8 +49,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                Elige el Centro Superate al que entregaras el producto y apretar el boton enviar formulario.
-            </div>
+                Choose which ¡Supérate! Center you want to give the resource and then click in the buttom to send the form
         </div>
 
         <div class="row">
@@ -60,7 +59,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                Cuando envies el formulario te saldra una alerta en el home y sera que tu solicitud fue recibida.
+                When you send the form you will get an alert on your home page that your request has been received.
             </div>
         </div>
 
