@@ -12,7 +12,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                Click in the Giving back buttom
+                <h2>Click in the Giving back buttom</h2>
 
 
 
@@ -27,7 +27,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                Fill in the form with the correct information
+                <h3>Fill in the form with the correct information</h3>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                Choose the state of the resource
+                <h4> the state of the resource</h4>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                Choose which ¡Supérate! Center you want to give the resource and then click in the buttom to send the form
+                <h5> which ¡Supérate! Center you want to give the resource and then click in the buttom to send the form</h5>
         </div>
 
         <div class="row">
@@ -59,7 +59,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                When you send the form you will get an alert on your home page that your request has been received.
+                <h6>When you send the form you will get an alert on your home page that your request has been received.</h6>
             </div>
         </div>
 
