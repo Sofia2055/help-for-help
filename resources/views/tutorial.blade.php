@@ -11,11 +11,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center">
-                <h2>Click in the Giving back buttom</h2>
-
-
-
+            <div class="col-12 text-center my-4">
+                <h2>Click in the "Giving back" button</h2>
             </div>
         </div>
         <!-- Termina aqui -->
@@ -26,8 +23,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center">
-                <h3>Fill in the form with the correct information</h3>
+            <div class="col-12 text-center my-4">
+                <h2>Fill in the form with the correct information</h2>
             </div>
         </div>
 
@@ -37,8 +34,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center">
-                <h4> the state of the resource</h4>
+            <div class="col-12 text-center my-4">
+                <h2> the state of the resource</h2>
             </div>
         </div>
 
@@ -48,9 +45,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center">
-                <h5> which ¡Supérate! Center you want to give the resource and then click in the buttom to send the form</h5>
-        </div>
+            <center>
+            <div class="col-8 text-center my-4">
+                <h2> Which ¡Supérate! Center you want to give the resource and then click in the button to send the form</h2>
+        </center>
+    </div>
 
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2">
@@ -58,8 +57,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 text-center">
-                <h6>When you send the form you will get an alert on your home page that your request has been received.</h6>
+            <center>
+            <div class="col-8 text-center my-4">
+                <h2>When you send the form you will get an alert on your home page that your request has been received.</h2>
+       </center>
             </div>
         </div>
 
