@@ -31,6 +31,7 @@ Route::get('tutorial2', function () {
     return view('tutorial');
 });
 
+
 Route::get('/form', function () {
     return view('form', [
         'centers' => Center::All()
@@ -39,6 +40,10 @@ Route::get('/form', function () {
 
 Route::get('/form2', function () {
     return view('form2');
+});
+
+Route::get(' /testimonios', function () {
+    return view('testimonios');
 });
 
 Route::get('/resources', function () {

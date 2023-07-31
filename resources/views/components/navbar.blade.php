@@ -42,6 +42,12 @@ function getIfActive($url)
                     <a class="nav-link {!! getIfActive('form') !!}" aria-current="page"
                         href="{{ url('/form') }}">Giving Back</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link {!! getIfActive('testimonio') !!}" aria-current="page"
+                        href="{{ url('/testimonios') }}">Testimonios</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('resource') !!}" aria-current="page"
                         href="{{ url('/resources') }}">Resources</a>
@@ -50,6 +56,10 @@ function getIfActive($url)
                     <a class="nav-link {!! getIfActive('/') !!}" aria-current="page"
                         href="{{ url('/') }}">Home</a>
                 </li>
+
+
+
+
                 <!--<li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown

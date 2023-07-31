@@ -74,6 +74,9 @@
     </div>
 </x-body>
 
+
+
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -130,15 +133,15 @@
   </style>
 </head>
 <body>
-  <button id="open-chat" onclick="toggleChat()">Open Chat</button>
-  <div id="chat-container">
-    <h6>Frequently Asked Questions (FAQ)</h6>
-    <button onclick="sendQuestion(1)">Where can I apply to make a donation?</button>
-    <button onclick="sendQuestion(2)">Is it reliable to use Help for Help?</button>
-    <button onclick="sendQuestion(3)">Is there a way to do the process online?</button>
-    <button onclick="clearChat()">Clear Chat</button>
-    <div id="chat-output"></div>
-  </div>
+    <button id="open-chat" onclick="toggleChat()">Open Chat</button>
+    <div id="chat-container" style="display: none;">
+        <h6>Frequently Asked Questions (FAQ)</h6>
+        <button onclick="sendQuestion(1)">Where can I apply to make a donation?</button>
+        <button onclick="sendQuestion(2)">Is it reliable to use Help for Help?</button>
+        <button onclick="sendQuestion(3)">Is there a way to do the process online?</button>
+        <button onclick="clearChat()">Clear Chat</button>
+        <div id="chat-output"></div>
+    </div>
 
   <script>
     // Función borrar o vaciar el coso este del chat
@@ -207,5 +210,6 @@
         chatContainer.style.display = "none";
         openChatBtn.innerText = "Open Chat";
       }
+
     });
   </script>
