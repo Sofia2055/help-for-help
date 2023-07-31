@@ -74,12 +74,6 @@
     </div>
 </x-body>
 
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -89,12 +83,12 @@
     #chat-container {
       position: fixed;
       bottom: 20px;
-      right: 20px;
+      left: 20px;
       width: 250px; /* Aumentamos el ancho del chat */
       background-color: #ffffff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
-      display: none;
+      display: block;
       padding: 20px; /* Aumentamos el espacio interno en los lados del chat */
     }
 
@@ -130,7 +124,7 @@
       padding: 10px;
       position: fixed;
       bottom: 20px;
-      right: 20px;
+      left: 20px;
       cursor: pointer;
     }
   </style>
@@ -215,5 +209,3 @@
       }
     });
   </script>
-</body>
-</html>

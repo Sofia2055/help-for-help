@@ -4,7 +4,7 @@
             @auth
             <a href="{{ url('/refresh') }}" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
             @endauth
-                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Help for Help</span>
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2023 Help for Help</span>
             @auth
             </a>
             @endauth
