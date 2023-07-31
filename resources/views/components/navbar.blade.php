@@ -44,8 +44,8 @@ function getIfActive($url)
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('testimonio') !!}" aria-current="page"
-                        href="{{ url('/testimonios') }}">Testimonios</a>
+                    <a class="nav-link {!! getIfActive('Testimonials') !!}" aria-current="page"
+                        href="{{ url('/Testimonials') }}">Testimonials</a>
                 </li>
 
                 <li class="nav-item">
