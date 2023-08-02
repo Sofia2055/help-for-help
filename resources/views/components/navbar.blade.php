@@ -57,7 +57,10 @@ function getIfActive($url)
                         href="{{ url('/') }}">Home</a>
                 </li>
 
-
+                <li class="nav-item">
+                    <a class="nav-link {!! getIfActive('Donate') !!}" aria-current="page"
+                        href="{{ url('/Donate') }}">Donate</a>
+                </li>
 
 
                 <!--<li class="nav-item dropdown">
