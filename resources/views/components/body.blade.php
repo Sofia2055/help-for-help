@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,8 @@
     <link rel="icon" href="{{ url('img/logo-k.png') }}">
     <title>H4H - @yield('title')</title>
 </head>
+
+
 
 <body>
     <x-navbar />

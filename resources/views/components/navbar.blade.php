@@ -20,20 +20,10 @@ function getIfActive($url)
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                @guest
-                <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('login') !!}" aria-current="page"
-                        href="{{ url('/login') }}">Login</a>
-                </li>
-                @endguest
-                @auth
-                <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('logout') !!}" aria-current="page"
-                        href="{{ url('/logout') }}">Logout</a>
-                </li>
-                @endauth
+                <!-- ... Otros elementos del navbar ... -->
+
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('tutorial') !!}" aria-current="page"
                         href="{{ url('/tutorial2') }}">Tutorial</a>
@@ -61,6 +51,30 @@ function getIfActive($url)
                     <a class="nav-link {!! getIfActive('Donate') !!}" aria-current="page"
                         href="{{ url('/Donate') }}">Donate</a>
                 </li>
+            </ul>
+        </div>
+
+
+        <div class="d-flex align-items-center">
+            @auth
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    My account
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                    <li><a class="dropdown-item" href="#">Personal Information</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="{{ url('/logout') }}">Logout</a></li>
+                </ul>
+            </div>
+            @else
+            <a class="btn btn-primary" href="{{ url('/login') }}">Login</a>
+            @endauth
+        </div>
+
+    </div>
+</nav>
+
 
 
                 <!--<li class="nav-item dropdown">
