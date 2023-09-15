@@ -59,13 +59,6 @@
     </div>
 </x-body>
 
-<style>
-
-</style>
-
-
-
-
 
   <style>
     body {

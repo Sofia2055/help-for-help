@@ -114,3 +114,151 @@
 .page-container{
     min-height: calc(100vh - 80px);
 }
+
+
+
+/* Esto es parte del footer */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+
+        /* Estilo para la cajita o el contenedor del carrusel :V */
+        .carrusel {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Estilo para la lista de logos */
+        .logos {
+            display: flex;
+            justify-content: center; /* Centra los elementos horizontalmente */
+            align-items: center; /* Centra los elementos verticalmente */
+        }
+
+        /* Estilo para los logos  */
+        .logos img {
+            width: 100px; /* Tamaño de los logos */
+            height: auto;
+            margin: 0 10px; /* Espacio entre logos */
+            transition: transform 0.3s; /* Agrega una transición despacio o suave */
+        }
+
+        /* este es la animacion para que al pasar el maus se agrande */
+        .logos img:hover {
+            transform: scale(1.1); /* Aumenta el tamaño al 110% */
+        }
+
+
+
+
+        .body {
+          font-family: Arial, sans-serif;
+        }
+
+        .container {
+          padding: 20px;
+        }
+
+        .donate-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .donate-text {
+          flex: 1;
+          padding: 20px;
+          border: 2px dashed #ccc;
+          border-radius: 10px;
+          background-color: #f9f9f9;
+        }
+
+        .donate-text p {
+          font-size: 16px;
+          line-height: 1.6;
+        }
+
+        .logo {
+          max-width: 30%;
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 36px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+
+                /* Estilos para las tarjetas de testimonios */
+                .testimonials-wrapper {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 20px;
+                  padding: 20px;
+                }
+
+                .testimonial-card {
+                  width: 300px;
+                  background-color: #f0f0f0;
+                  padding: 10px;
+                  border-radius: 5px;
+                  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+
+                .testimonial-card h2 {
+                  font-size: 18px;
+                  margin-bottom: 10px;
+                }
+
+                .testimonial-card p {
+                  font-size: 14px;
+                  margin-bottom: 5px;
+                }
+
+                .testimonial-card strong {
+                  font-weight: bold;
+                  color: black; /* esto paora el nombre de usuariooo */
+                }
+
+                .add-comment {
+                  width: 100%;
+                  background-color: #f0f0f0;
+                  padding: 10px;
+                  border-radius: 5px;
+                  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                  margin-top: 20px;
+                }
+
+                .add-comment h3 {
+                  margin-bottom: 10px;
+                }
+
+                .add-comment input[type="text"],
+                .add-comment textarea {
+                  width: 100%;
+                  margin-bottom: 10px;
+                }
+
+                .add-comment label {
+                  display: block;
+                  margin-bottom: 5px;
+                }
+
+                .add-comment button {
+                  background-color: #41c1ba;
+                  color: #ffffff;
+                  border: none;
+                  padding: 10px;
+                  border-radius: 5px;
+                  cursor: pointer;
+                }
+
+
+
