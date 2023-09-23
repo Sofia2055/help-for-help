@@ -16,7 +16,7 @@
                     <div class="row g-0">
                         <div class="col-8 offset-2 offset-md-0 col-md-3 text-center">
                             <img src="img/HELP FOR HELP.png" width="80%" class="p-3">
-                            <img src="img/Logo Back to.png" width="100%" class="p-4">
+                            <img src="img/ width="100%" class="p-4">
                         </div>
                         <div class="col-md-9">
                             <div class="row h-100">
@@ -51,71 +51,50 @@
         </div>
         <div class="col-12 col-md-10 offset-md-1">
             <div class="row row-cols-1 row-cols-sm-2 2row-cols-md-3 row-cols-lg-3 g-3">
-
-
-
             </div>
         </div>
     </div>
+
+    <div class="values-section">
+        <h2>Our Values</h2>
+        <div class="value">
+            <img src="img\" alt="Valor 1">
+            <p>Descripción del Valor 1</p>
+        </div>
+        <div class="value">
+            <img src="img\" alt="Valor 2">
+            <p>Descripción del Valor 2</p>
+        </div>
+        <div class="value">
+            <img src="img\" alt="Valor 3">
+            <p>Descripción del Valor 3</p>
+        </div>
+        <div class="value">
+            <img src="img\" alt="Valor 4">
+            <p>Descripción del Valor 4</p>
+        </div>
+        <div class="value">
+            <img src="img\" alt="Valor 5">
+            <p>Descripción del Valor 5</p>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            var valuesSection = document.querySelector(".values-section");
+            var valuesSectionPosition = valuesSection.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            if (valuesSectionPosition < windowHeight) {
+                valuesSection.style.animation = "fadeIn 1s ease";
+                valuesSection.style.opacity = "1";
+                valuesSection.style.transform = "translateY(0)";
+            }
+        });
+    </script>
+
 </x-body>
 
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    /* Estilos para el chat el contenedor */
-    #chat-container {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      width: 250px; /* Aumentamos el ancho del chat */
-      background-color: #ffffff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
-      display: block;
-      padding: 20px; /* Aumentamos el espacio interno en los lados del chat */
-    }
-
-    /* Estilos para los botones del chat */
-    #chat-container button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      border: none;
-      background-color: #41c1ba; /* Cambiamos el color de los botones */
-      color: #ffffff;
-      margin-bottom: 5px;
-      cursor: pointer;
-      border-radius: 5px; /* Agregamos esta propiedad para tener esquinas redondas */
-    }
-
-    /* Estilo para las respuestas del chat */
-    .response-container {
-      background-color: #f0f0f0;
-      border-radius: 5px;
-      padding: 40px; /* Agregamos espacio interno (padding) al contenedor de respuestas */
-      margin-bottom: 5px;
-      white-space: pre-wrap; /*  el texto se ajuste automáticamente y se muestre completo responsive pui*/
-      max-width: 300px; /* Establecer el ancho máximo del contenedor de respuestas : D*/
-    }
-
-    /* Estilos para el botón de abrir chat */
-    #open-chat {
-      background-color: #6ac32b;
-      color: #ffffff;
-      border: none;
-      border-radius: 10px;
-      padding: 10px;
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
     <button id="open-chat" onclick="toggleChat()">Open Chat</button>
     <div id="chat-container" style="display: none;">
         <h6>Frequently Asked Questions (FAQ)</h6>
@@ -196,3 +175,10 @@
 
     });
   </script>
+
+
+
+
+
+
+

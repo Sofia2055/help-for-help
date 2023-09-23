@@ -13,16 +13,22 @@ function getIfActive($url)
 }
 @endphp
 
-<nav class="navbar sticky-top navbar-expand-lg bg-light p-0">
+
+<nav class="navbar sticky-top navbar-expand-lg bg-light p-0" id="customNavbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('img/logo-k.png') }}" height="70" class="me-2">Help for Help</a>
+        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('img/HELP FOR HELP.png') }}" height="90" class="me-2">Help for Help</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- ... Otros elementos del navbar ... -->
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {!! getIfActive('/') !!}" aria-current="page"
+                    href="{{ url('/') }}">Home</a>
+            </li>
 
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('tutorial') !!}" aria-current="page"
@@ -33,19 +39,22 @@ function getIfActive($url)
                         href="{{ url('/form') }}">Giving Back</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('Testimonials') !!}" aria-current="page"
-                        href="{{ url('/Testimonials') }}">Testimonials</a>
-                </li>
 
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('resource') !!}" aria-current="page"
                         href="{{ url('/resources') }}">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('/') !!}" aria-current="page"
-                        href="{{ url('/') }}">Home</a>
-                </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link {!! getIfActive('Testimonials') !!}"" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Who we are
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Opción 2</a>
+                                <a class="dropdown-item" href="#">Opción 3</a>
+                                <a class="dropdown-item" href="{{ url('/Team') }}">Our team</a>
+                            </div>
+                        </li>
 
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('Donate') !!}" aria-current="page"
@@ -74,6 +83,33 @@ function getIfActive($url)
 
     </div>
 </nav>
+
+<script>
+    let prevScrollPos = window.pageYOffset;
+
+    window.onscroll = function () {
+        const currentScrollPos = window.pageYOffset;
+        const navbar = document.getElementById("customNavbar");
+
+        if (prevScrollPos > currentScrollPos) {
+
+            navbar.classList.remove("navbar-scrolled");
+        } else {
+
+            navbar.classList.add("navbar-scrolled");
+        }
+
+        prevScrollPos = currentScrollPos;
+    };
+</script>
+</body>
+</html>
+
+
+
+
+
+
 
 
 

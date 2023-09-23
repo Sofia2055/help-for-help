@@ -1,5 +1,18 @@
 .navbar {
-    background-color: #41c1ba !important;
+    background-color: white !important;
+}
+
+ /* Estilos iniciales para el navbar */
+ #customNavbar {
+    border-radius: 0; /* Esquinas cuadradas inicialmente */
+    box-shadow: none; /* Sin sombra inicialmente */
+    transition: all 0.3s ease; /* Transición suave para los cambios */
+}
+
+/* Estilos para el navbar con esquinas redondas y sombra cuando se desplaza hacia abajo */
+#customNavbar.navbar-scrolled {
+    border-radius: 10px; /* Ajusta el radio según tus preferencias */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Ajusta la sombra según tus preferencias */
 }
 
 .card-link {
@@ -18,6 +31,7 @@
 .card-link:hover {
     color: rgb(99, 99, 99);
 }
+
 
 .card-link:active {
     color: blue;
@@ -117,42 +131,6 @@
 
 
 
-/* Esto es parte del footer */
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-
-        /* Estilo para la cajita o el contenedor del carrusel :V */
-        .carrusel {
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-        }
-
-        /* Estilo para la lista de logos */
-        .logos {
-            display: flex;
-            justify-content: center; /* Centra los elementos horizontalmente */
-            align-items: center; /* Centra los elementos verticalmente */
-        }
-
-        /* Estilo para los logos  */
-        .logos img {
-            width: 100px; /* Tamaño de los logos */
-            height: auto;
-            margin: 0 10px; /* Espacio entre logos */
-            transition: transform 0.3s; /* Agrega una transición despacio o suave */
-        }
-
-        /* este es la animacion para que al pasar el maus se agrande */
-        .logos img:hover {
-            transform: scale(1.1); /* Aumenta el tamaño al 110% */
-        }
 
 
 
@@ -196,69 +174,90 @@
         }
 
 
-                /* Estilos para las tarjetas de testimonios */
-                .testimonials-wrapper {
-                  display: flex;
-                  flex-wrap: wrap;
-                  gap: 20px;
-                  padding: 20px;
+                /* team */
+                body {
+                    font-family: Arial, sans-serif;
                 }
 
-                .testimonial-card {
-                  width: 300px;
-                  background-color: #f0f0f0;
-                  padding: 10px;
-                  border-radius: 5px;
-                  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                .equipo {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
                 }
 
-                .testimonial-card h2 {
-                  font-size: 18px;
-                  margin-bottom: 10px;
+                .miembro {
+                    text-align: center;
+                    margin: 20px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    width: 200px;
                 }
 
-                .testimonial-card p {
-                  font-size: 14px;
-                  margin-bottom: 5px;
+                .miembro img {
+                    max-width: 100%;
+                    width: 100px; /* Establece el ancho deseado */
+                    height: auto; /* Esto permite que la altura se ajuste automáticamente según el ancho */
+                    border-radius: 50%;
                 }
 
-                .testimonial-card strong {
-                  font-weight: bold;
-                  color: black; /* esto paora el nombre de usuariooo */
+                /* esto es para la barra que me estrese y la quite y solo le deje la funcion de subir y bajar :v */
+                body {
+                    overflow-y: scroll;
+                    scrollbar-width: none;
                 }
 
-                .add-comment {
-                  width: 100%;
-                  background-color: #f0f0f0;
-                  padding: 10px;
-                  border-radius: 5px;
-                  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                  margin-top: 20px;
+                body::-webkit-scrollbar {
+                    width: 0.5em;
                 }
 
-                .add-comment h3 {
-                  margin-bottom: 10px;
+                body::-webkit-scrollbar-thumb {
+                    background-color: transparent;
                 }
 
-                .add-comment input[type="text"],
-                .add-comment textarea {
-                  width: 100%;
-                  margin-bottom: 10px;
-                }
 
-                .add-comment label {
-                  display: block;
-                  margin-bottom: 5px;
-                }
+                /* seccion de Valoresss*/
 
-                .add-comment button {
-                  background-color: #41c1ba;
-                  color: #ffffff;
-                  border: none;
-                  padding: 10px;
-                  border-radius: 5px;
-                  cursor: pointer;
-                }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
 
+        .values-section {
+            text-align: center;
+            padding: 40px;
+            animation: fadeIn 1s ease;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .value {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .value img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .value p {
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
 

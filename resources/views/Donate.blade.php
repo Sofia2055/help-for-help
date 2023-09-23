@@ -49,7 +49,7 @@
         <h1>Donate</h1>
         <p>Your donation is the seed that fuels Help for Help's growth, allowing more hands to reach out to those who need it most. By coming together, we transcend barriers and create a lasting impact and put Giving Back into practice in the lives of those affected. Every contribution, large or small, strengthens our community and fosters a more just and compassionate world. At the heart of every donation, we beat as one heart committed to change. Every word of encouragement, every coin shared, is the fuel that fuels our mission. Let's echo hope and expand Help for Help's reach, together. With your support, together we will build a legacy of empathy and progress. Donate today, and be a part of this extraordinary journey so that Help for Help continues to grow and open pathways to a better world for all."</p>
       </div>
-      <img src="img/logo-k.png" alt="Help for Help Logo" class="logo">
+      <img src="img/HELP FOR HELP.png" alt="Help for Help Logo" class="logo">
     </div>
   </div>
 

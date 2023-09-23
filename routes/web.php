@@ -42,8 +42,8 @@ Route::get('/form2', function () {
     return view('form2');
 });
 
-Route::get('/Testimonials', function () {
-    return view('Testimonials');
+Route::get('/Team', function () {
+    return view('Team');
 });
 
 Route::get('/Donate', function () {
