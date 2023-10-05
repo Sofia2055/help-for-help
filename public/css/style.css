@@ -218,46 +218,45 @@
 
                 /* seccion de Valoresss*/
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f2f2f2;
+                }
 
-        .values-section {
-            text-align: center;
-            padding: 40px;
-            animation: fadeIn 1s ease;
-        }
+                .values-section {
+                    text-align: center;
+                    padding: 40px;
+                    animation: fadeIn 1s ease;
+                    display: flex; /* Cambia el diseño de la sección a flexbox */
+                    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas */
+                    justify-content: center; /* Centra horizontalmente los elementos */
+                }
 
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+                .value {
+                    width: 300px; /* Ancho fijo para cada valor */
+                    margin: 10px;
+                    text-align: center;
+                }
 
-        .value {
-            display: inline-block;
-            margin: 10px;
-            text-align: center;
-        }
+                .value img {
+                    max-width: 100px; /* Ancho máximo de las imágenes */
+                    height: auto;
+                }
 
-        .value img {
-            max-width: 100px;
-            height: auto;
-        }
+                .value p {
+                    margin-top: 10px;
+                    word-wrap: break-word;
+                    text-align: center;
+                }
 
-        .value p {
-            margin-top: 10px;
-        }
+                .value h6 {
+                    margin: 0;
+                }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+
+
+
 
 

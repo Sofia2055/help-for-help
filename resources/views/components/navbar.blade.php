@@ -77,7 +77,8 @@ function getIfActive($url)
                 </ul>
             </div>
             @else
-            <a class="btn btn-primary" href="{{ url('/login') }}">Login</a>
+            <a class="btn btn-primary" href="{{ url('/login') }}" style="background-color: #decb27; border-color: #decb27;">Login</a>
+
             @endauth
         </div>
 

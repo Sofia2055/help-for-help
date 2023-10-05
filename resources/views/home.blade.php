@@ -54,131 +54,35 @@
             </div>
         </div>
     </div>
-
+    <br>
+    <h1><b>Our Values</b></h1>
     <div class="values-section">
-        <h2>Our Values</h2>
         <div class="value">
-            <img src="img\" alt="Valor 1">
-            <p>Descripción del Valor 1</p>
+            <img src="img/V1.PNG" alt="Valor 1">
+            <h6><b>Honesty</b></h6>
+            <p>It is to act with sincerity, not to lie, not to deceive, steal, or cheat.</p>
         </div>
         <div class="value">
-            <img src="img\" alt="Valor 2">
-            <p>Descripción del Valor 2</p>
+            <img src="img/V2.png"alt="Valor 2">
+            <h6><b>Solidarity</b></h6>
+            <p>Solidarity is a value that is characterized by mutual collaboration between all members, which allows problems to be overcome.</p>
         </div>
         <div class="value">
-            <img src="img\" alt="Valor 3">
-            <p>Descripción del Valor 3</p>
+            <img src="img/V3.png"alt="Valor 3">
+            <h6><b>Empathy</b></h6>
+            <p>It involves identifying with another person, knowing how to listen to others, understanding their problems and emotions.</p>
         </div>
         <div class="value">
-            <img src="img\" alt="Valor 4">
-            <p>Descripción del Valor 4</p>
+            <img src="img/V4.png" alt="Valor 4">
+            <h6><b>Resilience</b></h6>
+            <p>Resilience is the ability to adapt to adverse situations and strengthen ourselves.</p>
         </div>
         <div class="value">
-            <img src="img\" alt="Valor 5">
-            <p>Descripción del Valor 5</p>
+            <img src="img/V5.PNG" alt="Valor 5">
+            <h6><b>Respect</b></h6>
+            <p> It is caring about the impact of our actions on others, being inclusive and accepting others for who they are, even when they are different.</p>
         </div>
     </div>
 
-    <script>
-        window.addEventListener("scroll", function() {
-            var valuesSection = document.querySelector(".values-section");
-            var valuesSectionPosition = valuesSection.getBoundingClientRect().top;
-            var windowHeight = window.innerHeight;
-
-            if (valuesSectionPosition < windowHeight) {
-                valuesSection.style.animation = "fadeIn 1s ease";
-                valuesSection.style.opacity = "1";
-                valuesSection.style.transform = "translateY(0)";
-            }
-        });
-    </script>
 
 </x-body>
-
-    <button id="open-chat" onclick="toggleChat()">Open Chat</button>
-    <div id="chat-container" style="display: none;">
-        <h6>Frequently Asked Questions (FAQ)</h6>
-        <button onclick="sendQuestion(1)">Where can I apply to make a donation?</button>
-        <button onclick="sendQuestion(2)">Is it reliable to use Help for Help?</button>
-        <button onclick="sendQuestion(3)">Is there a way to do the process online?</button>
-        <button onclick="clearChat()">Clear Chat</button>
-        <div id="chat-output"></div>
-    </div>
-
-  <script>
-    // Función borrar o vaciar el coso este del chat
-    function clearChat() {
-      const chatOutput = document.getElementById("chat-output");
-      chatOutput.innerHTML = "";
-    }
-
-    // esto para mostrar y ocultat el chat
-    function toggleChat() {
-      const chatContainer = document.getElementById("chat-container");
-      const openChatBtn = document.getElementById("open-chat");
-
-      if (chatContainer.style.display === "none") {
-        chatContainer.style.display = "block";
-        openChatBtn.innerText = "Cerrar Chat";
-      } else {
-        chatContainer.style.display = "none";
-        openChatBtn.innerText = "Open Chat";
-      }
-    }
-
-    // esta es la funcion que el coso este al dar click a una pregunta tirara la respuesta :v
-    function sendQuestion(questionNumber) {
-      const chatOutput = document.getElementById("chat-output");
-      let response = "";
-
-      switch (questionNumber) {
-        case 1:
-          response = "You can make the donation at a Superate center near you by filling out a form with your information and the product. You can also use Giving Back by filling out the form with your information, attaching photos of the product and we will receive your request.";
-          break;
-        case 2:
-          response = "Help for Help is secure, as each donation is anonymous and only the psychologist and director of the Superate Center has access to this information.";
-          break;
-        case 3:
-          response = "Yes, we have a way to make your donation process online through Giving Back. Follow the tutorial to proceed with your donation.";
-          break;
-      }
-
-      // esto es para que muestre la respuesta aaaa con la cosa de animacion de escritura
-      chatOutput.innerHTML += "<p><strong>Pregunta:</strong> Pregunta " + questionNumber + "</p>";
-      typeWriterEffect(chatOutput, response);
-    }
-
-
-    function typeWriterEffect(container, text) {
-      let i = 0;
-      const speed = 50; // esta cosa es para la velocidad de escritura que tendra
-
-      function type() {
-        if (i < text.length) {
-          container.innerHTML += text.charAt(i);
-          i++;
-          setTimeout(type, speed);
-        }
-      }
-
-      type();
-    }
-
-    document.addEventListener("click", function(event) {
-      const chatContainer = document.getElementById("chat-container");
-      const openChatBtn = document.getElementById("open-chat");
-
-      if (!chatContainer.contains(event.target) && event.target !== openChatBtn) {
-        chatContainer.style.display = "none";
-        openChatBtn.innerText = "Open Chat";
-      }
-
-    });
-  </script>
-
-
-
-
-
-
-
