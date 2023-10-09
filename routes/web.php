@@ -27,8 +27,8 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('tutorial2', function () {
-    return view('tutorial');
+Route::get('Ubicaciones', function () {
+    return view('Ubicaciones');
 });
 
 
@@ -45,6 +45,8 @@ Route::get('/form2', function () {
 Route::get('/Team', function () {
     return view('Team');
 });
+
+
 
 Route::get('/Donate', function () {
     return view('Donate');
