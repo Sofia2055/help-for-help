@@ -25,7 +25,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2 col-8 offset-2 offset-md-0 order-1 order-md-2 pe-md-4 d-flex flex-wrap align-items-center">
-                                <img src="{{ url('img/Logo 1.png') }}" width="100%">
+                                <img src="{{ url('img/HELP FOR HELP.png') }}" width="100%">
                             </div>
                         </div>
                     </div>

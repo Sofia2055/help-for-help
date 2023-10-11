@@ -245,6 +245,8 @@
                     height: auto;
                 }
 
+
+
                 .value p {
                     margin-top: 10px;
                     word-wrap: break-word;
@@ -254,6 +256,65 @@
                 .value h6 {
                     margin: 0;
                 }
+
+                /* seccion de patrocinadores
+
+
+        /* Estilos  para los logos de los patrocinadores */
+        .patrocinadores {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-color: #6bc72a; /* aqui es para el cuadrito que esta en los patrocinadores*/
+        }
+
+        .logo {
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        /* Efecto de  pasar el mouse sobre los logos */
+        .logo:hover {
+            transform: translateY(-10px);
+        }
+
+        .logo img {
+            width: 200px; /* Ajusta el tamaño de los logos según tus necesidades */
+        }
+
+
+        /* Ubicaciones*/
+       .container { text-align: center;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #6cc729;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 450px;
+        border: 0;
+    }
+
+
 
 
 

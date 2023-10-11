@@ -1,5 +1,5 @@
 <x-body>
-    @section('title', 'Tutorial')
+    @section('title', 'Tutoria')
     <div class="container mt-3">
         <center>
             <h1>How can you donate?</h1>
