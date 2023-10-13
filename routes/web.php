@@ -46,6 +46,14 @@ Route::get('/Team', function () {
     return view('Team');
 });
 
+Route::get('/Partners', function () {
+    return view('Partners');
+});
+
+Route::get('/Formulario', function () {
+    return view('Formulario');
+});
+
 
 
 Route::get('/Donate', function () {
