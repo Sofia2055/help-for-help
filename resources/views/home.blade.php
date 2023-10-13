@@ -16,7 +16,6 @@
                     <div class="row g-0">
                         <div class="col-8 offset-2 offset-md-0 col-md-3 text-center">
                             <img src="img/HELP FOR HELP.png" width="80%" class="p-3">
-
                         </div>
                         <div class="col-md-9" style="text-align: left">
                             <div class="row h-100">

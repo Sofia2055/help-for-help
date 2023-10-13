@@ -212,5 +212,5 @@ Route::post("ally_form", function(){
     ]);
 
     Ally::create($attributes);
-    return redirect('form_completed');
+    return redirect('Partners')->with('success', 'Your request has been sended');
 });
