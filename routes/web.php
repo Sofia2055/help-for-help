@@ -199,3 +199,18 @@ Route::get('/refresh', function () {
         return redirect('/')->with('error', 'Database information refresh failed');
     }
 });
+
+Route::post("ally_form", function(){
+    $attributes= request()->validate([
+        'name' => 'required|string|max:100',
+        'leader'=> 'required|string|max:50',
+        'email'=>'required|email|max:50',
+        'phone_number'=>'required|numeric|max_digits:8',
+        'address'=>'required|string|max:100',
+        'confirm'=>'required|boolean',
+        'money'=>'required|numeric|min:1'
+    ]);
+
+    Ally::create($attributes);
+    return redirect('form_completed');
+});

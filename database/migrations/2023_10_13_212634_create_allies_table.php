@@ -21,8 +21,9 @@ return new class extends Migration
             $table->string("email");
             $table->integer("phone_number");
             $table->string("address");
-            $table->boolean("comfirm");
+            $table->boolean("confirm");
             $table->decimal("money");
+            $table->boolean("accepted");
         });
     }
 
