@@ -83,10 +83,11 @@
                         <li><a class="dropdown-item" href="{{ url('/logout') }}">Logout</a></li>
                     </ul>
                 </div>
-            @else
-                <a class="btn btn-sm" href="{{ url('/Donate') }}"
+                @else
+                <a class="btn btn-sm btn-shadow" href="{{ url('/Donate') }}"
                     style="background-color: #ffc439; color: white;">Donate</a>
             @endauth
+
 
         </div>
 

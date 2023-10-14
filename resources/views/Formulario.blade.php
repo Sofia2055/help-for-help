@@ -28,7 +28,8 @@
                     </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Send form</button>
+                <button type="submit" style="background-color: #6cc729; color: white; border-color: #6cc729;"
+                    class="btn btn-primary">Send form</button>
             </form>
         </div>
 
