@@ -60,6 +60,12 @@ Route::get('/Donate', function () {
     return view('Donate');
 });
 
+Route::get('/Events', function () {
+    return view('Events');
+});
+
+
+
 Route::get('/resources', function () {
     $resources = Resource::WhereRaw('given_quantity < resources_quantity');
 

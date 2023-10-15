@@ -1,5 +1,5 @@
 <x-body>
-    @section('title', 'Login')
+    @section('title', 'login')
     <div class="jumbotron vertical-center">
         <div class="container">
             <div class="row">

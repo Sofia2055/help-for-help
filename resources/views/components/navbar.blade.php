@@ -44,6 +44,11 @@
                         href="{{ url('/Partners') }}">Partners</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link {!! getIfActive('Events') !!}" aria-current="page"
+                        href="{{ url('/Events') }}">Events</a>
+                </li>
+
 
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('resource') !!}" aria-current="page"
@@ -60,8 +65,9 @@
                     </div>
                 </li>
 
+
                 <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('Login') !!}" aria-current="page" href="{{ url('/Login') }}">Login</a>
+                    <a class="nav-link {!! getIfActive('login') !!}" aria-current="page" href="{{ url('/login') }}">Login</a>
                 </li>
             </ul>
         </div>
