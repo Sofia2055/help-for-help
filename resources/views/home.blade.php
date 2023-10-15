@@ -5,13 +5,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <x-carousel :images="[
-                    'img\H4H group.jfif',
-                    'img\1c2021d2-81af-429f-923a-0f86e9b1cabd.jfif',
-                    'img\Holaa mundo primera imagen.jpg',
-                ]" id="1" />
+                <x-carousel :images="['img\carr1.jpeg', 'img\carr2.jpeg', 'img\h4h.png']" id="1" />
             </div>
         </div>
+
+        <script>
+            var myCarousel = document.querySelector('#1');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 2000
+            });
+        </script>
+
         <div class="row">
             <div class="col-12">
                 <div class="card my-4">

@@ -338,3 +338,15 @@
 }
 
 
+/* imagenes de los miembros ojo solo la de marden esta con styles en linea */
+
+.miembro {
+    text-align: center;
+}
+
+.miembro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
