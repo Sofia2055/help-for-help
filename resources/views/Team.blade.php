@@ -73,7 +73,8 @@
 
                 <!-- Miembro 10 -->
                 <div class="miembro">
-                    <img src="img\marden.jpg" alt="Miembro 10" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; object-position: center top;">
+                    <img src="img\marden.jpg" alt="Miembro 10"
+                        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; object-position: center top;">
                     <h2>Marden Rodriguez</h2>
                     <p>Developer</p>
                 </div>
@@ -92,7 +93,6 @@
 
 
 
-            </div>
+        </div>
 
 </x-body>
-

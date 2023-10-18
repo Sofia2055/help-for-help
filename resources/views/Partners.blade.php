@@ -5,8 +5,8 @@
             <h1><b>Partners</b></h1>
         </div>
         <div class="container" style="position: relative;">
-            <div class="donate-content" style="text-align: center">
-                <div class="donate-text">
+            <div class="Partner" style="text-align: center">
+                <div class="partner-text">
                     <p>At Help for Help, we recognize the value of joining forces to create meaningful impact. We invite
                         you to become part of our community of committed donors. Your participation is the key to making
                         a real difference in the lives of those who need it most. By joining us, you will be

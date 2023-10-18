@@ -26,7 +26,7 @@
                     background-color: #f9f9f9;
                 }
 
-                .donate-text p {
+                .donate-text p {    
                     font-size: 16px;
                     line-height: 1.6;
                 }
