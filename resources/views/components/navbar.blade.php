@@ -15,7 +15,7 @@
 
 <nav class="navbar sticky-top navbar-expand-lg bg-light p-0" id="customNavbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('img/HELP FOR HELP.png') }}" height="60"
+        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ url('img/logo new.png') }}" height="65"
                 class="me-2">Help for Help</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,46 +53,18 @@
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('resource') !!}" aria-current="page"
                         href="{{ url('/resources') }}">Resources</a>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link {!! getIfActive('Testimonials') !!}"" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Who we are
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ url('/Team') }}">Our team</a>
-                    </div>
                 </li>
 
 
                 <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('login') !!}" aria-current="page" href="{{ url('/login') }}">Login</a>
+                    <a class="nav-link {!! getIfActive('Events') !!}" aria-current="page" href="{{ url('/Team') }}">Team</a>
                 </li>
-            </ul>
-        </div>
 
 
-
-        <div class="d-flex align-items-center">
-            @auth
-                <div class="dropdown">
-                    <button class="btn btn-success dropdown-toggle" type="button" id="accountDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        My account
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
-                        <li><a class="dropdown-item" href="#">Personal Information</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="{{ url('/logout') }}">Logout</a></li>
-                    </ul>
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-sm btn-shadow" href="{{ url('/Donate') }}"
+                        style="background-color: #ffc439; color: white; position: absolute; ; right: 0; margin-right: 10px;">Donate</a>
                 </div>
-                @else
-                <a class="btn btn-sm btn-shadow" href="{{ url('/Donate') }}"
-                    style="background-color: #ffc439; color: white;">Donate</a>
-            @endauth
 
 
         </div>

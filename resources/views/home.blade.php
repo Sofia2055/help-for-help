@@ -69,14 +69,15 @@
                                                 <h6 class="card-title fs-2" style="text-align: left">Objectives</h6>
                                                 <p style="text-align: left">We seek to promote a circular economic
                                                     system between
-                                                    ¡Supérate! Active students, alumni, and families. That way, unused
+                                                    Active students and families. That way, unused
                                                     products
                                                     can have a new purpose, and students can reutilize them according to
                                                     their needs.</p>
                                                 <h6 class="card-title fs-2" style="text-align: left">Mission</h6>
-                                                <p style="text-align: left">Our mission is to "back to reality" and help
-                                                    people who had
-                                                    difficulties in the pandemic and encourage others to help.
+                                                <p style="text-align: left">We seek to collect any material that is
+                                                    considered useful in the academic area. We are motivated to find
+                                                    ways to help.We trust that this resources can change the reality of
+                                                    many students. Together we can make a difference.
                                                 </p>
                                             </div>
                                         </div>
@@ -89,6 +90,13 @@
             </div>
         </div>
     </div>
+
+
+ 
+
+
+
+
     <br>
     <div class="col-12 col-md-10 offset-md-1">
         <div class="row row-cols-1 row-cols-sm-2 2row-cols-md-3 row-cols-lg-3 g-3">
@@ -127,6 +135,12 @@
             <p> It is caring about the impact of our actions on others, being inclusive and accepting others for
                 who
                 they are, even when they are different.</p>
+        </div>
+
+        <div class="value">
+            <img src="img/V6.PNG" alt="Valor 6">
+            <h6><b>Generosity</b></h6>
+            <p> The term “generosity” characterizes both the act of giving and the spirit of the gift. </p>
         </div>
     </div>
 

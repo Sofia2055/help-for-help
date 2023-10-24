@@ -133,8 +133,6 @@
 
 
 
-
-
         .body {
           font-family: Arial, sans-serif;
         }
@@ -236,7 +234,7 @@
 
                 .value {
                     width: 300px; /* Ancho fijo para cada valor */
-                    margin: 10px;
+                    margin: 20px;
                     text-align: center;
                 }
 
@@ -350,3 +348,4 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
