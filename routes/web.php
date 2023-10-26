@@ -64,6 +64,11 @@ Route::get('/Events', function () {
     return view('Events');
 });
 
+Route::get('/Calendar', function () {
+    return view('Calendar');
+});
+
+
 
 
 Route::get('/resources', function () {
@@ -220,3 +225,5 @@ Route::post("ally_form", function(){
     Ally::create($attributes);
     return redirect('Partners')->with('success', 'Your request has been sended');
 });
+
+

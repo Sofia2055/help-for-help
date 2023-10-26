@@ -12,21 +12,9 @@
                     padding: 20px;
                 }
 
-                .donate-content {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
 
-                .donate-text {
-                    max-width: 100%; /* Asegura que el texto ocupe el ancho completo en pantallas pequeñas */
-                    padding: 20px;
-                    border: 2px dashed #ccc;
-                    border-radius: 10px;
-                    background-color: #f9f9f9;
-                }
 
-                .donate-text p {    
+                .donate-text p {
                     font-size: 16px;
                     line-height: 1.6;
                 }
@@ -43,10 +31,7 @@
                 }
 
                 @media (min-width: 768px) {
-                    .donate-content {
-                        flex-direction: row;
-                        justify-content: space-between;
-                    }
+
                     .donate-text {
                         flex: 1;
                     }
@@ -121,6 +106,8 @@
                     border-radius: 5px;
                 }
             </style>
+        </div>
+    </div>
 
 
 

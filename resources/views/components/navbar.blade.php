@@ -58,14 +58,14 @@
 
                 <li class="nav-item">
                     <a class="nav-link {!! getIfActive('Events') !!}" aria-current="page" href="{{ url('/Team') }}">Team</a>
+
+
                 </li>
 
-
-                <div class="d-flex align-items-center">
+                <div class="position-absolute  end-0 ">
                     <a class="btn btn-sm btn-shadow" href="{{ url('/Donate') }}"
-                        style="background-color: #ffc439; color: white; position: absolute; ; right: 0; margin-right: 10px;">Donate</a>
+                        style="background-color: #ffc439; color: white; margin-right: 10px;">Donate</a>
                 </div>
-
 
         </div>
 
