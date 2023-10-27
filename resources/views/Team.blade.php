@@ -57,21 +57,16 @@
                     <p>Marketing</p>
                 </div>
 
-                <!-- Miembro 8 -->
-                <div class="miembro">
-                    <img src="img\Abigail.jpeg" alt="Miembro 8">
-                    <h2>Abigail Sanchez</h2>
-                    <p>Marketing</p>
-                </div>
 
-                <!-- Miembro 9 -->
+
+                <!-- Miembro 8 -->
                 <div class="miembro">
                     <img src="img\Karla.jpeg" alt="Miembro 9">
                     <h2>Karla Contreras</h2>
                     <p>Marketing</p>
                 </div>
 
-                <!-- Miembro 10 -->
+                <!-- Miembro 9 -->
                 <div class="miembro">
                     <img src="img\marden.jpg" alt="Miembro 10"
                         style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; object-position: center top;">
@@ -81,17 +76,13 @@
 
 
 
-                <!-- Miembro 11 -->
+                <!-- Miembro 10 -->
                 <div class="miembro">
                     <img src="img\Ester.jpeg" alt="Miembro 11">
                     <h2>Ester Salazar</h2>
                     <p>Speech</p>
                 </div>
             </div>
-
-
-
-
 
         </div>
 
