@@ -104,7 +104,7 @@
     </div>
     </div>
     <br>
-    <h1><b>Our Values</b></h1>
+    <h1 style="text-align: center;"><b>Our Values</b></h1>
     <div class="values-section">
         <div class="value">
             <img src="img/V1.PNG" alt="Valor 1">
@@ -144,7 +144,7 @@
         </div>
     </div>
 
-    <h1><b>Sponsors</b></h1>
+    <h1 style="text-align: center;"><b>Sponsors</b></h1>
     <div class="patrocinadores">
         <div class="logo">
             <a href="https://fundacionpoma.org/">

@@ -9,7 +9,6 @@
                 <!-- si vas a poner una imagen pone siempre "img\ nombre.jpg" -->
                 <div class="miembro">
                     <img src="img\Cristian.jpg" alt="Miembro 1">
-
                     <h2>Cristian Alfaro</h2>
                     <p> Lider - Developer</p>
                 </div>

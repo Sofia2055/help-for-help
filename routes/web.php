@@ -68,6 +68,9 @@ Route::get('/Calendar', function () {
     return view('Calendar');
 });
 
+Route::get('/Givingback', function () {
+    return view('Givingback');
+});
 
 
 

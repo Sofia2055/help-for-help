@@ -35,7 +35,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {!! getIfActive('form') !!}" aria-current="page" href="{{ url('/form') }}">Giving
+                    <a class="nav-link {!! getIfActive('form') !!}" aria-current="page" href="{{ url('/Givingback') }}">Giving
                         Back</a>
                 </li>
 
